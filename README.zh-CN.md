@@ -76,3 +76,7 @@ print(resp.choices[0].message.content)
 ## 许可证
 
 本仓库文档与示例采用 [MIT](./LICENSE)。
+
+## Hermes / Cursor
+
+Base URL：`https://aapi.ai/v1`；Key 用 AAPI 密钥；模型名以 https://aapi.ai/pricing 为准。

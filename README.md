@@ -111,3 +111,10 @@ See [SECURITY.md](./SECURITY.md). Report vulnerabilities privately. Do not file 
 ## License
 
 Docs and examples in this repository are under [MIT](./LICENSE).
+
+## Hermes / Cursor (copy-paste)
+
+**Hermes Agent** (custom OpenAI-compatible endpoint): set provider/base URL to `https://aapi.ai/v1` and use your AAPI key as the API key. Prefer env vars over hard-coding.
+
+**Cursor / OpenAI-compatible clients:** Base URL `https://aapi.ai/v1`, API Key = AAPI key, model = an ID from https://aapi.ai/pricing.
+

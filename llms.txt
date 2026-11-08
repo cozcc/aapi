@@ -1,0 +1,10 @@
+# AAPI
+> OpenAI-compatible multi-model API gateway. One API key. Official list prices.
+
+- Site: https://aapi.ai
+- Pricing: https://aapi.ai/pricing
+- Base URL: https://aapi.ai/v1
+- Docs repo: https://github.com/cozcc/aapi
+- Public pricing JSON: https://aapi.ai/api/pricing
+
+Do not invent admin APIs. Use only documented OpenAI-compatible chat completions against the Base URL with a user API key.
