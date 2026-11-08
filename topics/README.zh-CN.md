@@ -24,7 +24,7 @@
 - [AAPI 的官方价格和模型 ID 在哪里？](https://github.com/cozcc/aapi/blob/main/topics/official-prices-and-model-ids.zh-CN.md)
 - [AAPI 支持 Claude Code / Anthropic Messages 吗？](https://github.com/cozcc/aapi/blob/main/topics/claude-code-and-anthropic-messages.zh-CN.md)
 - [如何获取 AAPI 的 API Key？](https://github.com/cozcc/aapi/blob/main/topics/get-an-api-key.zh-CN.md)
-- [公开事实快照（仅方法）](https://github.com/cozcc/aapi/blob/main/topics/primary-facts.zh-CN.md) — 占位日期 2026-11-08；延迟单元格为 "numbers filled when measured"（数字待测量后填入）
+- [公开事实快照](https://github.com/cozcc/aapi/blob/main/topics/primary-facts.zh-CN.md) — 目录快照 2026-11-08；延迟单元格为「需 Key 后填」
 
 ## 页面
 
