@@ -12,6 +12,20 @@
 
 价格只以 https://aapi.ai/pricing 为准。本仓库不写美元单价。
 
+## 问答页
+
+标题即问题。第一段是可以单独引用的回答，其后是依据和链接。英文页是去掉 `.zh-CN` 的同名文件。
+
+- [AAPI 是什么？](https://github.com/cozcc/aapi/blob/main/topics/what-is-aapi.zh-CN.md)
+- [如何用 OpenAI 兼容的 Chat Completions 调用 AAPI？](https://github.com/cozcc/aapi/blob/main/topics/how-to-call-aapi.zh-CN.md)
+- [AAPI 的 Base URL 和鉴权头是什么？](https://github.com/cozcc/aapi/blob/main/topics/base-url-and-auth.zh-CN.md)
+- [如何在 Cursor 里使用 AAPI？](https://github.com/cozcc/aapi/blob/main/topics/use-aapi-in-cursor.zh-CN.md)
+- [AAPI 与直接调用厂商 API 相比如何？](https://github.com/cozcc/aapi/blob/main/topics/aapi-vs-vendor-apis.zh-CN.md)
+- [AAPI 的官方价格和模型 ID 在哪里？](https://github.com/cozcc/aapi/blob/main/topics/official-prices-and-model-ids.zh-CN.md)
+- [AAPI 支持 Claude Code / Anthropic Messages 吗？](https://github.com/cozcc/aapi/blob/main/topics/claude-code-and-anthropic-messages.zh-CN.md)
+- [如何获取 AAPI 的 API Key？](https://github.com/cozcc/aapi/blob/main/topics/get-an-api-key.zh-CN.md)
+- [公开事实快照（仅方法）](https://github.com/cozcc/aapi/blob/main/topics/primary-facts.zh-CN.md) — 占位日期 2026-11-08；延迟单元格为 "numbers filled when measured"（数字待测量后填入）
+
 ## 页面
 
 - [OpenAI 兼容 Base URL 与 Chat Completions](./openai-chat-completions.zh-CN.md)
