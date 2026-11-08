@@ -1,10 +1,46 @@
 # AAPI
-> OpenAI-compatible multi-model API gateway. One API key. Official list prices.
 
-- Site: https://aapi.ai
-- Pricing: https://aapi.ai/pricing
-- Base URL: https://aapi.ai/v1
-- Docs repo: https://github.com/cozcc/aapi
-- Public pricing JSON: https://aapi.ai/api/pricing
+> OpenAI-compatible Chat Completions gateway. Homepage [aapi.ai](https://aapi.ai). Base URL `https://aapi.ai/v1`. Docs repository [cozcc/aapi](https://github.com/cozcc/aapi). Official list prices only on the [pricing page](https://aapi.ai/pricing).
 
-Do not invent admin APIs. Use only documented OpenAI-compatible chat completions against the Base URL with a user API key.
+Send Chat Completions to base URL `https://aapi.ai/v1` (`POST /chat/completions`) with a user API key in `Authorization: Bearer` (environment variable `AAPI_API_KEY`). Do not invent admin APIs. Copy model ids from the pricing page; this file does not quote USD amounts. Claude Code's `ANTHROPIC_BASE_URL` speaks Anthropic Messages (`/v1/messages`). These docs publish Chat Completions only, and do not set that variable to `https://aapi.ai` or `https://aapi.ai/v1`.
+
+## Docs
+
+- [README](https://github.com/cozcc/aapi/blob/main/README.md): English quick start for Chat Completions
+- [README (zh-CN)](https://github.com/cozcc/aapi/blob/main/README.zh-CN.md): same quick start in Chinese
+- [Security policy](https://github.com/cozcc/aapi/blob/main/SECURITY.md): report vulnerabilities in private
+- [Topics index](https://github.com/cozcc/aapi/blob/main/topics/README.md): base URL, pricing pointer, and client-card index
+- [Topics index (zh-CN)](https://github.com/cozcc/aapi/blob/main/topics/README.zh-CN.md): Chinese topic index
+- [Chat Completions](https://github.com/cozcc/aapi/blob/main/topics/openai-chat-completions.md): base URL, auth header, and request body
+- [Chat Completions (zh-CN)](https://github.com/cozcc/aapi/blob/main/topics/openai-chat-completions.zh-CN.md): Chinese Chat Completions page
+- [Client setup overview](https://github.com/cozcc/aapi/blob/main/topics/client-setup.md): shared base URL, key env, and which clients fit
+- [Client setup overview (zh-CN)](https://github.com/cozcc/aapi/blob/main/topics/client-setup.zh-CN.md): Chinese client-setup overview
+- [Docs repository](https://github.com/cozcc/aapi): public docs and examples; no server source
+
+## Pricing
+
+- [Pricing](https://aapi.ai/pricing): official model ids and list prices
+- [Pricing and model list](https://github.com/cozcc/aapi/blob/main/topics/pricing-and-models.md): how to use the pricing page; no USD amounts copied into git
+- [Pricing and model list (zh-CN)](https://github.com/cozcc/aapi/blob/main/topics/pricing-and-models.zh-CN.md): Chinese pricing page notes
+
+## Clients
+
+- [Client cards](https://github.com/cozcc/aapi/blob/main/docs/clients/README.md): shared base URL and `AAPI_API_KEY`, then one card per client
+- [Client cards (zh-CN)](https://github.com/cozcc/aapi/blob/main/docs/clients/README.zh-CN.md): Chinese client-card index
+- [Cursor](https://github.com/cozcc/aapi/blob/main/docs/clients/cursor.md): Override OpenAI Base URL `https://aapi.ai/v1`
+- [Cursor (zh-CN)](https://github.com/cozcc/aapi/blob/main/docs/clients/cursor.zh-CN.md): Chinese Cursor card
+- [Hermes Agent](https://github.com/cozcc/aapi/blob/main/docs/clients/hermes-agent.md): custom endpoint, provider `custom`, base URL `https://aapi.ai/v1`
+- [Hermes Agent (zh-CN)](https://github.com/cozcc/aapi/blob/main/docs/clients/hermes-agent.zh-CN.md): Chinese Hermes Agent card
+- [curl](https://github.com/cozcc/aapi/blob/main/docs/clients/curl.md): `POST https://aapi.ai/v1/chat/completions`
+- [curl (zh-CN)](https://github.com/cozcc/aapi/blob/main/docs/clients/curl.zh-CN.md): Chinese curl card
+- [OpenAI Python](https://github.com/cozcc/aapi/blob/main/docs/clients/openai-python.md): OpenAI SDK `base_url` `https://aapi.ai/v1`
+- [OpenAI Python (zh-CN)](https://github.com/cozcc/aapi/blob/main/docs/clients/openai-python.zh-CN.md): Chinese OpenAI Python card
+- [Claude Code](https://github.com/cozcc/aapi/blob/main/docs/clients/claude-code.md): Anthropic Messages client; AAPI's published URL is Chat Completions
+- [Claude Code (zh-CN)](https://github.com/cozcc/aapi/blob/main/docs/clients/claude-code.zh-CN.md): Chinese Claude Code card
+
+## Optional
+
+- [llms-full.txt](https://github.com/cozcc/aapi/blob/main/llms-full.txt): expanded quick start, env vars, and the same links
+- [curl example](https://github.com/cozcc/aapi/blob/main/examples/curl.sh): sample Chat Completions script
+- [OpenAI Python example](https://github.com/cozcc/aapi/blob/main/examples/openai_python.py): sample OpenAI SDK script
+- [Env template](https://github.com/cozcc/aapi/blob/main/.env.example): `AAPI_API_KEY` and `AAPI_BASE_URL`

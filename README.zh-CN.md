@@ -6,6 +6,9 @@ AAPI 是 OpenAI 兼容的 API 网关：一个密钥接入多种模型，对外�
 
 - 官网：https://aapi.ai
 - 模型与定价：https://aapi.ai/pricing
+- 主题：[topics/README.zh-CN.md](./topics/README.zh-CN.md) · [English](./topics/README.md)
+- 客户端接入卡片：[docs/clients/README.zh-CN.md](./docs/clients/README.zh-CN.md) · [English](./docs/clients/README.md)
+- 代理索引：[llms.txt](./llms.txt) · 展开版 [llms-full.txt](./llms-full.txt)
 
 > 本仓库只是**公开文档与示例入口**，**不包含**服务端源码、管理后台或内部基础设施。
 
@@ -61,7 +64,7 @@ print(resp.choices[0].message.content)
 ## 模型与定价
 
 - 实时模型与**官方** USD/1M 标价：https://aapi.ai/pricing
-- 公开定价 JSON（无需登录）：`GET https://aapi.ai/api/pricing`
+- 如何读取该页（仓库里不抄价格）：[topics/pricing-and-models.zh-CN.md](./topics/pricing-and-models.zh-CN.md)
 
 模型列表可能变化；以定价页为准，不要依赖仓库里的缓存名单。
 
@@ -80,3 +83,8 @@ print(resp.choices[0].message.content)
 ## Hermes / Cursor
 
 Base URL：`https://aapi.ai/v1`；Key 用 AAPI 密钥；模型名以 https://aapi.ai/pricing 为准。
+
+- Hermes Agent 自定义端点：[docs/clients/hermes-agent.zh-CN.md](./docs/clients/hermes-agent.zh-CN.md)
+- Cursor：[docs/clients/cursor.zh-CN.md](./docs/clients/cursor.zh-CN.md)
+- Claude Code 的 `ANTHROPIC_BASE_URL` 走 Anthropic Messages，本仓库没有为 AAPI 公布该协议。见 [docs/clients/claude-code.zh-CN.md](./docs/clients/claude-code.zh-CN.md)。
+- 全部卡片：[docs/clients/README.zh-CN.md](./docs/clients/README.zh-CN.md)
