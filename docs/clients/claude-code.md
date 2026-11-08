@@ -20,7 +20,7 @@ Claude Code request path:     /v1/messages
 
 Official Claude Code gateway docs: a gateway selected with `ANTHROPIC_BASE_URL` implements Anthropic Messages (`/v1/messages`, optional `/v1/messages/count_tokens`). Claude Code appends `/v1/messages` itself. https://code.claude.com/docs/en/llm-gateway-protocol
 
-AAPI's public pricing JSON lists `supported_endpoint.openai` as `POST /v1/chat/completions`. This repository does not publish an Anthropic Messages base URL. `ANTHROPIC_BASE_URL` is therefore not set to `https://aapi.ai` or `https://aapi.ai/v1` from these docs.
+These docs publish `POST https://aapi.ai/v1/chat/completions` only. They do not publish an Anthropic Messages base URL. `ANTHROPIC_BASE_URL` is therefore not set to `https://aapi.ai` or `https://aapi.ai/v1` from these docs.
 
 ## Minimal working call (Chat Completions)
 

@@ -8,6 +8,7 @@ AAPI is an OpenAI-compatible API gateway: one API key, many models, transparent 
 - Pricing / model catalog: https://aapi.ai/pricing
 - Topics: [topics/README.md](./topics/README.md) · [中文](./topics/README.zh-CN.md)
 - Client access cards: [docs/clients/README.md](./docs/clients/README.md) · [中文](./docs/clients/README.zh-CN.md)
+- Agent index: [llms.txt](./llms.txt) · expanded [llms-full.txt](./llms-full.txt)
 
 > This repository is a **public docs & examples** entry point only. It does **not** contain AAPI server source code, admin tooling, or internal infrastructure.
 
@@ -63,8 +64,7 @@ More snippets: [`examples/`](./examples/).
 ## Models & pricing
 
 - Browse live models and **official** USD / 1M prices: https://aapi.ai/pricing
-- Public pricing JSON (no account required): `GET https://aapi.ai/api/pricing`
-- How to read that list (no prices copied into git): [topics/pricing-and-models.md](./topics/pricing-and-models.md)
+- How to read that page (no prices copied into git): [topics/pricing-and-models.md](./topics/pricing-and-models.md)
 
 Model availability can change; always trust the live pricing page over any cached list in git.
 

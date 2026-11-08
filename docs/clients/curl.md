@@ -34,4 +34,4 @@ export AAPI_API_KEY="your-key"
 
 [`examples/curl.sh`](../../examples/curl.sh) sends model `deepseek-v4.1-flash`. Confirm that id at https://aapi.ai/pricing or edit the script to another live `model_name`.
 
-Prices: https://aapi.ai/pricing · `GET https://aapi.ai/api/pricing`. Field to copy into `model` is `data[].model_name`.
+Prices and model ids: https://aapi.ai/pricing.

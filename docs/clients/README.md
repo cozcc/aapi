@@ -9,8 +9,7 @@ Copy-paste setup for OpenAI-compatible clients. One card per client. No secrets.
 ```text
 Base URL: https://aapi.ai/v1
 Key env:  AAPI_API_KEY
-Model:    model_name from https://aapi.ai/pricing
-          or data[].model_name in GET https://aapi.ai/api/pricing
+Model:    an id from https://aapi.ai/pricing
 ```
 
 OpenAI SDK name pair (same key, same URL):

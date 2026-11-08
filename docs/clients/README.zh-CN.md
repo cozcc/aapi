@@ -9,8 +9,7 @@ English: [README.md](./README.md) · 主题概述：[topics/client-setup.zh-CN.m
 ```text
 Base URL: https://aapi.ai/v1
 Key 环境变量: AAPI_API_KEY
-Model:    https://aapi.ai/pricing 上的 model_name
-          或 GET https://aapi.ai/api/pricing 里的 data[].model_name
+Model:    https://aapi.ai/pricing 上的模型 id
 ```
 
 OpenAI SDK 的变量名（同一把密钥、同一个 URL）：

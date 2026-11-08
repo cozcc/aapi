@@ -59,4 +59,4 @@ resp = client.chat.completions.create(
 print(resp.choices[0].message.content)
 ```
 
-两种写法都请求 `POST https://aapi.ai/v1/chat/completions`。模型 id 取 `GET https://aapi.ai/api/pricing` 的 `data[].model_name`。
+两种写法都请求 `POST https://aapi.ai/v1/chat/completions`。模型 id 以 https://aapi.ai/pricing 为准。

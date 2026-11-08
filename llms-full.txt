@@ -1,0 +1,99 @@
+# AAPI
+
+> OpenAI-compatible Chat Completions gateway. Homepage [aapi.ai](https://aapi.ai). Base URL `https://aapi.ai/v1`. Docs repository [cozcc/aapi](https://github.com/cozcc/aapi). Official list prices only on the [pricing page](https://aapi.ai/pricing).
+
+This file expands [llms.txt](https://github.com/cozcc/aapi/blob/main/llms.txt). It restates the public quick start. It does not add prices, admin APIs, or server internals. The repository is docs and examples only.
+
+## Canonical URLs
+
+- [Homepage](https://aapi.ai): sign up and create a user API key in the console
+- [Pricing](https://aapi.ai/pricing): model ids and official list prices. Copy them from this page. Do not quote USD amounts from git
+- [Docs repository](https://github.com/cozcc/aapi): public docs and examples
+- Base URL: `https://aapi.ai/v1`
+- Chat Completions: `POST https://aapi.ai/v1/chat/completions`
+- Auth: `Authorization: Bearer` plus the user API key
+
+`GET https://aapi.ai/v1` is not a documentation page. Clients use the base URL as an OpenAI SDK prefix and append `/chat/completions`.
+
+## Environment
+
+[`.env.example`](https://github.com/cozcc/aapi/blob/main/.env.example):
+
+```bash
+AAPI_API_KEY=sk-replace-me
+AAPI_BASE_URL=https://aapi.ai/v1
+```
+
+Copy that file to `.env` and replace the placeholder. Do not commit a real key. `sk-replace-me` is not a credential.
+
+The OpenAI Python SDK's own names, as used in the client cards, point at the same key and URL:
+
+```bash
+export AAPI_API_KEY="your-key"
+export AAPI_BASE_URL="https://aapi.ai/v1"
+export OPENAI_API_KEY="$AAPI_API_KEY"
+export OPENAI_BASE_URL="https://aapi.ai/v1"
+```
+
+## curl
+
+Script: [`examples/curl.sh`](https://github.com/cozcc/aapi/blob/main/examples/curl.sh). Card: [curl](https://github.com/cozcc/aapi/blob/main/docs/clients/curl.md) · [zh-CN](https://github.com/cozcc/aapi/blob/main/docs/clients/curl.zh-CN.md).
+
+```bash
+export AAPI_API_KEY="your-key"
+curl https://aapi.ai/v1/chat/completions \
+  -H "Authorization: Bearer $AAPI_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "model": "deepseek-v4.1-flash",
+    "messages": [{"role": "user", "content": "ping"}]
+  }'
+```
+
+`deepseek-v4.1-flash` is the sample id in the examples. Confirm it on [the pricing page](https://aapi.ai/pricing) before you depend on it.
+
+## OpenAI Python
+
+Script: [`examples/openai_python.py`](https://github.com/cozcc/aapi/blob/main/examples/openai_python.py). Card: [OpenAI Python](https://github.com/cozcc/aapi/blob/main/docs/clients/openai-python.md) · [zh-CN](https://github.com/cozcc/aapi/blob/main/docs/clients/openai-python.zh-CN.md).
+
+```python
+import os
+from openai import OpenAI
+
+client = OpenAI(
+    api_key=os.environ["AAPI_API_KEY"],
+    base_url=os.environ.get("AAPI_BASE_URL", "https://aapi.ai/v1"),
+)
+
+resp = client.chat.completions.create(
+    model="deepseek-v4.1-flash",  # confirm at https://aapi.ai/pricing
+    messages=[{"role": "user", "content": "ping"}],
+)
+print(resp.choices[0].message.content)
+```
+
+`OpenAI()` with no arguments reads `OPENAI_API_KEY` and `OPENAI_BASE_URL` when those are set to the same AAPI key and `https://aapi.ai/v1`. Both forms call `POST https://aapi.ai/v1/chat/completions`.
+
+## Other clients
+
+Index: [docs/clients/README.md](https://github.com/cozcc/aapi/blob/main/docs/clients/README.md) · [zh-CN](https://github.com/cozcc/aapi/blob/main/docs/clients/README.zh-CN.md). Overview: [topics/client-setup.md](https://github.com/cozcc/aapi/blob/main/topics/client-setup.md) · [zh-CN](https://github.com/cozcc/aapi/blob/main/topics/client-setup.zh-CN.md).
+
+Shared values:
+
+```text
+Base URL: https://aapi.ai/v1
+Key env:  AAPI_API_KEY
+Model:    an id from https://aapi.ai/pricing
+```
+
+- [Cursor](https://github.com/cozcc/aapi/blob/main/docs/clients/cursor.md) · [zh-CN](https://github.com/cozcc/aapi/blob/main/docs/clients/cursor.zh-CN.md): Settings → Models, paste the AAPI key into OpenAI API Key, enable Override OpenAI Base URL, set `https://aapi.ai/v1` (include `/v1`, omit `/chat/completions`). Add a custom model whose name matches an id on the pricing page.
+- [Hermes Agent](https://github.com/cozcc/aapi/blob/main/docs/clients/hermes-agent.md) · [zh-CN](https://github.com/cozcc/aapi/blob/main/docs/clients/hermes-agent.zh-CN.md): `provider: custom`, `base_url: https://aapi.ai/v1`, `key_env: AAPI_API_KEY`. Hermes calls `POST {base_url}/chat/completions`. Provider reference: https://hermes-agent.nousresearch.com/docs/integrations/providers
+- [Claude Code](https://github.com/cozcc/aapi/blob/main/docs/clients/claude-code.md) · [zh-CN](https://github.com/cozcc/aapi/blob/main/docs/clients/claude-code.zh-CN.md): `ANTHROPIC_BASE_URL` selects an Anthropic Messages gateway (`/v1/messages`). These docs do not publish that protocol for AAPI. Use a Chat Completions client above. Claude Code gateway docs: https://code.claude.com/docs/en/llm-gateway-protocol
+
+## Docs map
+
+- [README](https://github.com/cozcc/aapi/blob/main/README.md) · [README (zh-CN)](https://github.com/cozcc/aapi/blob/main/README.zh-CN.md)
+- [Security policy](https://github.com/cozcc/aapi/blob/main/SECURITY.md)
+- [Topics index](https://github.com/cozcc/aapi/blob/main/topics/README.md) · [zh-CN](https://github.com/cozcc/aapi/blob/main/topics/README.zh-CN.md)
+- [Chat Completions](https://github.com/cozcc/aapi/blob/main/topics/openai-chat-completions.md) · [zh-CN](https://github.com/cozcc/aapi/blob/main/topics/openai-chat-completions.zh-CN.md)
+- [Pricing and model list](https://github.com/cozcc/aapi/blob/main/topics/pricing-and-models.md) · [zh-CN](https://github.com/cozcc/aapi/blob/main/topics/pricing-and-models.zh-CN.md)

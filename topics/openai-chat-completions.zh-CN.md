@@ -11,12 +11,12 @@ Base URL:  https://aapi.ai/v1
 Endpoint:  POST /chat/completions
 Auth:      Authorization: Bearer $AAPI_API_KEY
 Body:      Content-Type: application/json
-Model:     https://aapi.ai/pricing 上的 model_name
+Model:     https://aapi.ai/pricing 上的模型 id
 ```
 
 完整地址：`https://aapi.ai/v1/chat/completions`
 
-定价 JSON 的 `supported_endpoint.openai`（`path` 与 `method`）描述同一约定。若与本页不一致，以实时 JSON 为准：`GET https://aapi.ai/api/pricing`。
+若仓库里缓存的模型 id 与 https://aapi.ai/pricing 不一致，以定价页为准。
 
 ## 最小请求
 

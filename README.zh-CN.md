@@ -8,6 +8,7 @@ AAPI 是 OpenAI 兼容的 API 网关：一个密钥接入多种模型，对外�
 - 模型与定价：https://aapi.ai/pricing
 - 主题：[topics/README.zh-CN.md](./topics/README.zh-CN.md) · [English](./topics/README.md)
 - 客户端接入卡片：[docs/clients/README.zh-CN.md](./docs/clients/README.zh-CN.md) · [English](./docs/clients/README.md)
+- 代理索引：[llms.txt](./llms.txt) · 展开版 [llms-full.txt](./llms-full.txt)
 
 > 本仓库只是**公开文档与示例入口**，**不包含**服务端源码、管理后台或内部基础设施。
 
@@ -63,8 +64,7 @@ print(resp.choices[0].message.content)
 ## 模型与定价
 
 - 实时模型与**官方** USD/1M 标价：https://aapi.ai/pricing
-- 公开定价 JSON（无需登录）：`GET https://aapi.ai/api/pricing`
-- 如何读取该列表（仓库里不抄价格）：[topics/pricing-and-models.zh-CN.md](./topics/pricing-and-models.zh-CN.md)
+- 如何读取该页（仓库里不抄价格）：[topics/pricing-and-models.zh-CN.md](./topics/pricing-and-models.zh-CN.md)
 
 模型列表可能变化；以定价页为准，不要依赖仓库里的缓存名单。
 

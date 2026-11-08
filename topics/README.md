@@ -8,9 +8,9 @@ Short pages for people and coding agents. This repository is public docs and exa
 | Base URL | `https://aapi.ai/v1` |
 | Chat Completions | `POST https://aapi.ai/v1/chat/completions` |
 | API key environment variable | `AAPI_API_KEY` |
-| Models and prices | https://aapi.ai/pricing · `GET https://aapi.ai/api/pricing` |
+| Models and prices | https://aapi.ai/pricing |
 
-Prices are published only on those two official URLs. This repo does not list USD amounts.
+Prices are published only on https://aapi.ai/pricing. This repo does not list USD amounts.
 
 ## Pages
 

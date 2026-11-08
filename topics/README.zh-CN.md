@@ -8,9 +8,9 @@
 | Base URL | `https://aapi.ai/v1` |
 | Chat Completions | `POST https://aapi.ai/v1/chat/completions` |
 | API Key 环境变量 | `AAPI_API_KEY` |
-| 模型与价格 | https://aapi.ai/pricing · `GET https://aapi.ai/api/pricing` |
+| 模型与价格 | https://aapi.ai/pricing |
 
-价格只以这两个官方地址为准。本仓库不写美元单价。
+价格只以 https://aapi.ai/pricing 为准。本仓库不写美元单价。
 
 ## 页面
 

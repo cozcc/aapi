@@ -7,8 +7,7 @@ Shared values for every OpenAI-compatible client. Per-client steps live in [docs
 ```text
 Base URL: https://aapi.ai/v1
 Key env:  AAPI_API_KEY
-Model:    model_name from https://aapi.ai/pricing
-          or data[].model_name in GET https://aapi.ai/api/pricing
+Model:    an id from https://aapi.ai/pricing
 ```
 
 OpenAI SDK clients can use the same key and URL under the SDK's own names:

@@ -59,4 +59,4 @@ resp = client.chat.completions.create(
 print(resp.choices[0].message.content)
 ```
 
-Both patterns send `POST https://aapi.ai/v1/chat/completions`. The model id is `data[].model_name` from `GET https://aapi.ai/api/pricing`.
+Both patterns send `POST https://aapi.ai/v1/chat/completions`. The model id comes from https://aapi.ai/pricing.

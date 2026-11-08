@@ -11,12 +11,12 @@ Base URL:  https://aapi.ai/v1
 Endpoint:  POST /chat/completions
 Auth:      Authorization: Bearer $AAPI_API_KEY
 Body:      Content-Type: application/json
-Model:     model_name from https://aapi.ai/pricing
+Model:     an id from https://aapi.ai/pricing
 ```
 
 Full URL: `https://aapi.ai/v1/chat/completions`
 
-The live pricing JSON reports the same contract under `supported_endpoint.openai` (`path` and `method`). If that object and this page disagree, follow the live JSON: `GET https://aapi.ai/api/pricing`.
+If a model id cached in git disagrees with https://aapi.ai/pricing, follow the pricing page.
 
 ## Minimal request
 
@@ -30,7 +30,7 @@ curl https://aapi.ai/v1/chat/completions \
   }'
 ```
 
-`deepseek-v4.1-flash` is the sample id in [`examples/curl.sh`](../examples/curl.sh). Confirm it is still a `model_name` on https://aapi.ai/pricing before you depend on it. Replace `model` with any other live `model_name`.
+`deepseek-v4.1-flash` is the sample id in [`examples/curl.sh`](../examples/curl.sh). Confirm it is still listed on https://aapi.ai/pricing before you depend on it. Replace `model` with any other id from that page.
 
 ## OpenAI SDK environment names
 

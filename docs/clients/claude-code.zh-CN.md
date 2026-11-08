@@ -20,7 +20,7 @@ Claude Code 请求路径: /v1/messages
 
 Claude Code 官方网关文档：用 `ANTHROPIC_BASE_URL` 指向的网关实现 Anthropic Messages（`/v1/messages`，可选 `/v1/messages/count_tokens`）。`/v1/messages` 由 Claude Code 自己拼接。https://code.claude.com/docs/en/llm-gateway-protocol
 
-AAPI 公开定价 JSON 里，`supported_endpoint.openai` 为 `POST /v1/chat/completions`。本仓库没有公布 Anthropic Messages 的 Base URL。因此这些文档不会把 `ANTHROPIC_BASE_URL` 设为 `https://aapi.ai` 或 `https://aapi.ai/v1`。
+这些文档只公布 `POST https://aapi.ai/v1/chat/completions`。本仓库没有公布 Anthropic Messages 的 Base URL。因此这些文档不会把 `ANTHROPIC_BASE_URL` 设为 `https://aapi.ai` 或 `https://aapi.ai/v1`。
 
 ## 最小可用调用（Chat Completions）
 

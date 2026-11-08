@@ -34,4 +34,4 @@ export AAPI_API_KEY="your-key"
 
 [`examples/curl.sh`](../../examples/curl.sh) 发送的模型是 `deepseek-v4.1-flash`。到 https://aapi.ai/pricing 确认该 id，或把脚本改成另一个仍在列表中的 `model_name`。
 
-价格：https://aapi.ai/pricing · `GET https://aapi.ai/api/pricing`。填进 `model` 的字段是 `data[].model_name`。
+价格和模型 id：https://aapi.ai/pricing。

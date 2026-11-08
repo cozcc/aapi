@@ -7,8 +7,7 @@ English: [client-setup.md](./client-setup.md)
 ```text
 Base URL: https://aapi.ai/v1
 Key 环境变量: AAPI_API_KEY
-Model:    https://aapi.ai/pricing 上的 model_name
-          或 GET https://aapi.ai/api/pricing 里的 data[].model_name
+Model:    https://aapi.ai/pricing 上的模型 id
 ```
 
 OpenAI SDK 也可以用它自己的变量名指向同一把密钥和同一个 URL：
