@@ -1,8 +1,12 @@
-# AAPI 公开事实快照（方法）
+# AAPI 公开事实快照
 
-上次更新：2026-11-08
+上次更新：2026-11-08（Asia/Shanghai）
 
-本页是一份重复发布的公开快照的方法草稿，例如每周一次。填好的快照会列出公开的模型 id 和系列名称，链到官方价格，并且只在实际测量之后记录客户端延迟。2026-11-08 这一行是占位。数字待测量后填入（numbers filled when measured）。美元金额留在 https://aapi.ai/pricing，不写入本文件。
+本页是重复发布的公开快照。它从公开目录 JSON 列出模型 id 与系列名称，链到官方价格，并且只在实际测量之后记录客户端延迟。美元金额留在 https://aapi.ai/pricing，不写入本文件。
+
+**本次目录拉取：** `GET https://aapi.ai/api/pricing` → HTTP 200 `application/json`，时间 2026-11-08 18:14:21 Asia/Shanghai（UTC 2026-11-08T10:14:21Z）。响应含 `data` 与 `vendors`。
+
+**本次延迟：** 未测量 — 测量环境未设置 `AAPI_API_KEY`。下表延迟格为 **需 Key 后填**，在按测量方法实测之前不要编造数字。
 
 ## 快照可以包含什么
 
@@ -21,9 +25,13 @@
 6. 其他字段不写入 git。这包括计费表达式、分组标识、配额字段，以及一切数字价格。
 7. 官方标价让读者到 https://aapi.ai/pricing 查看。
 
+### 目录 JSON 不可用时如何人工核对
+
+打开 https://aapi.ai/pricing，按页面显示逐个抄下模型 id 字符串。不要把美元（或其他货币）金额写入 git。系列名称可在 JSON 缺少 `vendors` 时，按该页的厂商分组抄写。只与指向定价页的文档交叉核对 id。
+
 ## 如何测量延迟
 
-只有当一次运行遵守本协议并得出数字时，才公布延迟。在那之前，单元格文字是 `numbers filled when measured`（数字待测量后填入）。
+只有当一次运行遵守本协议并得出数字时，才公布延迟。在那之前，单元格写 `需 Key 后填` / `numbers filled when measured`。
 
 - 调用 `POST https://aapi.ai/v1/chat/completions`，请求头为 `Authorization: Bearer`，密钥在 `AAPI_API_KEY`。公布的记录里不写密钥。
 - 发送非流式 JSON：`temperature` 为 0，一条用户消息，内容为 `ping`，`model` 使用同一 UTC 日期从 https://aapi.ai/pricing 复制的 id。
@@ -34,11 +42,40 @@
 - 失败次数计入尝试总数，并把错误次数写在延迟旁边。
 - 在备注里写明客户端和地区。单次样本只是一次观察，公布的行使用上面的 20 次测量。
 
-## 快照
+## 公开模型系列（2026-11-08）
+
+来源：`GET https://aapi.ai/api/pricing`（无需账户）。系列 = 按 `vendor_id` 匹配的 `vendors[].name`；无 `vendor_id` 时为 `unknown`。按系列、再按模型 id 排序。**不含价格。**
+
+| 系列 | 模型 id |
+| --- | --- |
+| Alibaba | `qwen3.8-max` |
+| Anthropic | `claude-fable-5-1` |
+| Anthropic | `claude-haiku-5-5` |
+| Anthropic | `claude-opus-4-8` |
+| Anthropic | `claude-opus-5-5` |
+| DeepSeek | `deepseek-v4-pro` |
+| DeepSeek | `deepseek-v4.1-flash` |
+| Moonshot | `kimi-k3` |
+| OpenAI | `gpt-6-astra` |
+| OpenAI | `gpt-6-sol` |
+| OpenAI | `gpt-6.1-sol` |
+| Zhipu AI | `glm-5.3` |
+| Zhipu AI | `glm-5.3-flash` |
+| Zhipu AI | `glm-5.3-flashx` |
+| unknown | `kimi-k3.1-pro` |
+| xAI | `grok-4.7` |
+
+同次 JSON 中的 vendors（id → name）：35 DeepSeek、36 Zhipu AI、38 OpenAI、39 Anthropic、40 xAI、41 字节跳动、42 Alibaba、43 Moonshot。厂商 41 本次无对应 `data` 行。`kimi-k3.1-pro` 无 `vendor_id` → 按协议系列为 `unknown`。
+
+官方标价：https://aapi.ai/pricing
+
+## 延迟快照
 
 | UTC 日期 | 模型 id | 系列 | 总延迟中位数 | 总延迟 p95 | 样本数 | 地区 | HTTP 错误 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2026-11-08 | numbers filled when measured | numbers filled when measured | numbers filled when measured | numbers filled when measured | numbers filled when measured | numbers filled when measured | numbers filled when measured |
+| 2026-11-08 | 需 Key 后填 | 需 Key 后填 | 需 Key 后填 | 需 Key 后填 | 需 Key 后填 | Asia/Shanghai（拟测） | 需 Key 后填 |
+
+备注：拟在 2026-11-08 于 Asia/Shanghai 客户端测量。拿到 Key 后建议首选模型 id：`glm-5.3-flash`（当日公开目录 id）。发布前请在测量当日的 UTC 日期从 https://aapi.ai/pricing 再抄一次 id。
 
 ## 依据
 
@@ -46,5 +83,6 @@
 - 目录 JSON：https://aapi.ai/api/pricing
 - 价格在哪里读：https://github.com/cozcc/aapi/blob/main/topics/official-prices-and-model-ids.zh-CN.md
 - Chat Completions 地址：https://aapi.ai/v1/chat/completions
+- 同日探针：`GET /v1/models` → 401；`GET /api/models` → 401；`GET /api/pricing/public` → 404。本次无鉴权公开目录仅为 `/api/pricing`。
 
 English: https://github.com/cozcc/aapi/blob/main/topics/primary-facts.md

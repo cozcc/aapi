@@ -105,4 +105,4 @@ Model:    an id from https://aapi.ai/pricing
 - [Official prices and model ids](https://github.com/cozcc/aapi/blob/main/topics/official-prices-and-model-ids.md) · [zh-CN](https://github.com/cozcc/aapi/blob/main/topics/official-prices-and-model-ids.zh-CN.md)
 - [Claude Code / Anthropic Messages](https://github.com/cozcc/aapi/blob/main/topics/claude-code-and-anthropic-messages.md) · [zh-CN](https://github.com/cozcc/aapi/blob/main/topics/claude-code-and-anthropic-messages.zh-CN.md)
 - [Get an API key](https://github.com/cozcc/aapi/blob/main/topics/get-an-api-key.md) · [zh-CN](https://github.com/cozcc/aapi/blob/main/topics/get-an-api-key.zh-CN.md)
-- [Primary facts method](https://github.com/cozcc/aapi/blob/main/topics/primary-facts.md) · [zh-CN](https://github.com/cozcc/aapi/blob/main/topics/primary-facts.zh-CN.md)
+- [Primary facts snapshot 2026-11-08](https://github.com/cozcc/aapi/blob/main/topics/primary-facts.md) · [zh-CN](https://github.com/cozcc/aapi/blob/main/topics/primary-facts.zh-CN.md): catalog table filled; latency still needs an API key
