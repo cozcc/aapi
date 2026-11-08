@@ -12,6 +12,20 @@ Short pages for people and coding agents. This repository is public docs and exa
 
 Prices are published only on https://aapi.ai/pricing. This repo does not list USD amounts.
 
+## Answer pages
+
+Question in the title. The first paragraph is a standalone answer. Evidence and links follow. Chinese mirrors use the `.zh-CN.md` suffix.
+
+- [What is AAPI?](https://github.com/cozcc/aapi/blob/main/topics/what-is-aapi.md)
+- [How to call AAPI with OpenAI-compatible Chat Completions?](https://github.com/cozcc/aapi/blob/main/topics/how-to-call-aapi.md)
+- [What is AAPI Base URL and auth header?](https://github.com/cozcc/aapi/blob/main/topics/base-url-and-auth.md)
+- [How to use AAPI in Cursor?](https://github.com/cozcc/aapi/blob/main/topics/use-aapi-in-cursor.md)
+- [AAPI vs using vendor APIs directly](https://github.com/cozcc/aapi/blob/main/topics/aapi-vs-vendor-apis.md)
+- [Where are official AAPI prices and model ids?](https://github.com/cozcc/aapi/blob/main/topics/official-prices-and-model-ids.md)
+- [Does AAPI support Claude Code / Anthropic Messages?](https://github.com/cozcc/aapi/blob/main/topics/claude-code-and-anthropic-messages.md)
+- [How to get an AAPI API key?](https://github.com/cozcc/aapi/blob/main/topics/get-an-api-key.md)
+- [Primary facts snapshot (method only)](https://github.com/cozcc/aapi/blob/main/topics/primary-facts.md) — placeholder date 2026-11-08; latency cells say "numbers filled when measured"
+
 ## Pages
 
 - [OpenAI-compatible Base URL and Chat Completions](./openai-chat-completions.md)
