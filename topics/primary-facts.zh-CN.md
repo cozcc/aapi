@@ -6,7 +6,7 @@
 
 **本次目录拉取：** `GET https://aapi.ai/api/pricing` → HTTP 200 `application/json`，时间 2026-11-08 18:14:21 Asia/Shanghai（UTC 2026-11-08T10:14:21Z）。响应含 `data` 与 `vendors`。
 
-**本次延迟：** 未测量 — 测量环境未设置 `AAPI_API_KEY`。下表延迟格为 **需 Key 后填**，在按测量方法实测之前不要编造数字。
+**本次延迟：** 已于 2026-11-08 19:26:10 CST（Asia/Shanghai）由 Asia/Shanghai box 客户端测得。`glm-5.3-flash`（Zhipu AI 系列）在 `POST https://aapi.ai/v1/chat/completions` 上的非流式总延迟：中位数 2930 ms，p95 3814 ms，丢弃 1 次预热后样本 20，HTTP 错误 0。总延迟是客户端墙上时钟，从请求开始到响应正文接收完毕（`temperature` 0，一条用户消息 `ping`）。这些数字是该日期该协议下的非流式总延迟，不是流式首字节时间。
 
 ## 快照可以包含什么
 
@@ -73,9 +73,9 @@
 
 | UTC 日期 | 模型 id | 系列 | 总延迟中位数 | 总延迟 p95 | 样本数 | 地区 | HTTP 错误 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2026-11-08 | 需 Key 后填 | 需 Key 后填 | 需 Key 后填 | 需 Key 后填 | 需 Key 后填 | Asia/Shanghai（拟测） | 需 Key 后填 |
+| 2026-11-08 | `glm-5.3-flash` | Zhipu AI | 2930 ms | 3814 ms | 20 | Asia/Shanghai（box 客户端） | 0 |
 
-备注：拟在 2026-11-08 于 Asia/Shanghai 客户端测量。拿到 Key 后建议首选模型 id：`glm-5.3-flash`（当日公开目录 id）。发布前请在测量当日的 UTC 日期从 https://aapi.ai/pricing 再抄一次 id。
+备注：UTC 日期 2026-11-08 的非流式总延迟，测量时间 2026-11-08 19:26:10 CST（Asia/Shanghai）。端点 `POST https://aapi.ai/v1/chat/completions`，模型 `glm-5.3-flash`（Zhipu AI），`temperature` 0，用户消息 `ping`。总延迟 = 客户端墙上时钟，到响应正文接收完毕。丢弃预热 1 次。样本数 20。HTTP 错误 0。最小 2357 ms，最大 4388 ms。地区：Asia/Shanghai（box 客户端）。流式首字节时间是另一项指标，不是本行数字。
 
 ## 依据
 

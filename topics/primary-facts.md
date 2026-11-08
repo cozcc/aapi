@@ -6,7 +6,7 @@ This page is a recurring public snapshot. It lists public model ids and family n
 
 **Catalog fetch (this snapshot):** `GET https://aapi.ai/api/pricing` → HTTP 200 `application/json` at 2026-11-08 18:14:21 Asia/Shanghai (UTC 2026-11-08T10:14:21Z). Success payload with `data` + `vendors`.
 
-**Latency (this snapshot):** not measured — `AAPI_API_KEY` was unset in the measurement environment. Cells below say **needs API key** until a run that follows the measurement method fills them. Do not invent numbers.
+**Latency (this snapshot):** measured 2026-11-08 19:26:10 CST (Asia/Shanghai) from the Asia/Shanghai box client. Non-streaming total latency for `glm-5.3-flash` (Zhipu AI family) at `POST https://aapi.ai/v1/chat/completions`: median 2930 ms, p95 3814 ms, 20 samples after 1 warmup discarded, 0 HTTP errors. Total latency is client wall-clock from the start of the request until the response body is complete (`temperature` 0, one user message `ping`). These figures are that non-streaming total on that date, not streaming time-to-first-byte.
 
 ## What a snapshot may contain
 
@@ -73,9 +73,9 @@ Official list prices: https://aapi.ai/pricing
 
 | UTC date | Model id | Family | Median total latency | p95 total latency | Samples | Region | HTTP errors |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2026-11-08 | needs API key | needs API key | needs API key | needs API key | needs API key | Asia/Shanghai (intended) | needs API key |
+| 2026-11-08 | `glm-5.3-flash` | Zhipu AI | 2930 ms | 3814 ms | 20 | Asia/Shanghai (box client) | 0 |
 
-Notes: Measurement point planned as Asia/Shanghai box client on 2026-11-08. Suggested first model id after a key is available: `glm-5.3-flash` (public catalog id that day). Re-copy the id from https://aapi.ai/pricing on the measurement UTC date before publishing.
+Notes: Non-streaming total latency on UTC date 2026-11-08, measured at 2026-11-08 19:26:10 CST (Asia/Shanghai). Endpoint `POST https://aapi.ai/v1/chat/completions`, model `glm-5.3-flash` (Zhipu AI), `temperature` 0, user message `ping`. Total = client wall-clock until the response body is complete. Warmup discarded: 1. Samples: 20. HTTP errors: 0. Min 2357 ms, max 4388 ms. Region: Asia/Shanghai (box client). Streaming time-to-first-byte is a separate metric and is not this row.
 
 ## Evidence
 

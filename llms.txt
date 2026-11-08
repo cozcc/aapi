@@ -56,8 +56,8 @@ Send Chat Completions to base URL `https://aapi.ai/v1` (`POST /chat/completions`
 - [Official prices and model ids (zh-CN)](https://github.com/cozcc/aapi/blob/main/topics/official-prices-and-model-ids.zh-CN.md): Chinese pricing answer
 - [Claude Code / Anthropic Messages (zh-CN)](https://github.com/cozcc/aapi/blob/main/topics/claude-code-and-anthropic-messages.zh-CN.md): Chinese caveat
 - [Get an API key (zh-CN)](https://github.com/cozcc/aapi/blob/main/topics/get-an-api-key.zh-CN.md): Chinese key answer
-- [Primary facts snapshot](https://github.com/cozcc/aapi/blob/main/topics/primary-facts.md): public model families from the 2026-11-08 catalog JSON; latency cells still need an API key
-- [Primary facts snapshot (zh-CN)](https://github.com/cozcc/aapi/blob/main/topics/primary-facts.zh-CN.md): 2026-11-08 catalog snapshot; latency cells still 需 Key 后填
+- [Primary facts snapshot](https://github.com/cozcc/aapi/blob/main/topics/primary-facts.md): public model families from the 2026-11-08 catalog JSON; latency snapshot filled 2026-11-08 for `glm-5.3-flash` (non-streaming total)
+- [Primary facts snapshot (zh-CN)](https://github.com/cozcc/aapi/blob/main/topics/primary-facts.zh-CN.md): 2026-11-08 catalog snapshot; latency filled 2026-11-08 for `glm-5.3-flash`（非流式总延迟）
 - [llms-full.txt](https://github.com/cozcc/aapi/blob/main/llms-full.txt): expanded quick start, env vars, and the same links
 - [curl example](https://github.com/cozcc/aapi/blob/main/examples/curl.sh): sample Chat Completions script
 - [OpenAI Python example](https://github.com/cozcc/aapi/blob/main/examples/openai_python.py): sample OpenAI SDK script
