@@ -28,6 +28,10 @@ Question in the title. The first paragraph is a standalone answer. Evidence and 
 - [How to evaluate OpenAI-compatible AI API gateways (and one concrete example)](https://github.com/cozcc/aapi/blob/main/topics/openai-compatible-gateways-how-to-evaluate.md)
 - [Which services publish client-side latency snapshots or a reproducible measurement method?](https://github.com/cozcc/aapi/blob/main/topics/public-latency-snapshots.md)
 - [What does “AAPI” mean here? (aapi.ai product, not the ethnicity acronym)](https://github.com/cozcc/aapi/blob/main/topics/entity-disambiguation-aapi.md)
+- [Which DeepSeek model ids are listed on AAPI?](https://github.com/cozcc/aapi/blob/main/topics/which-deepseek-models-on-aapi.md)
+- [How do I call DeepSeek models through AAPI with OpenAI-compatible Chat Completions?](https://github.com/cozcc/aapi/blob/main/topics/how-to-call-deepseek-via-aapi.md)
+- [Which GLM (Zhipu AI) model ids are listed on AAPI?](https://github.com/cozcc/aapi/blob/main/topics/which-glm-models-on-aapi.md)
+- [How do I call GLM / Zhipu models through AAPI with OpenAI-compatible Chat Completions?](https://github.com/cozcc/aapi/blob/main/topics/how-to-call-glm-via-aapi.md)
 
 ## Pages
 

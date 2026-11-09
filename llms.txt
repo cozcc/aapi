@@ -64,6 +64,14 @@ Send Chat Completions to base URL `https://aapi.ai/v1` (`POST /chat/completions`
 - [Which services publish client-side latency snapshots? (zh-CN)](https://aapi.ai/topics/public-latency-snapshots.zh-CN.md): Chinese latency-snapshot page
 - [What does AAPI mean here?](https://aapi.ai/topics/entity-disambiguation-aapi.md): aapi.ai product name, not the ethnicity acronym
 - [What does AAPI mean here? (zh-CN)](https://aapi.ai/topics/entity-disambiguation-aapi.zh-CN.md): Chinese entity page
+- [Which DeepSeek model ids are listed on AAPI?](https://aapi.ai/topics/which-deepseek-models-on-aapi.md): `deepseek-v4-pro` and `deepseek-v4.1-flash` on the 2026-11-09 public catalog; re-check https://aapi.ai/pricing
+- [Which DeepSeek model ids are listed on AAPI? (zh-CN)](https://aapi.ai/topics/which-deepseek-models-on-aapi.zh-CN.md): Chinese DeepSeek model-id page
+- [How do I call DeepSeek models through AAPI?](https://aapi.ai/topics/how-to-call-deepseek-via-aapi.md): Chat Completions at `POST https://aapi.ai/v1/chat/completions` with a DeepSeek model id
+- [How do I call DeepSeek models through AAPI? (zh-CN)](https://aapi.ai/topics/how-to-call-deepseek-via-aapi.zh-CN.md): Chinese DeepSeek call page
+- [Which GLM (Zhipu AI) model ids are listed on AAPI?](https://aapi.ai/topics/which-glm-models-on-aapi.md): `glm-5.3`, `glm-5.3-flash`, and `glm-5.3-flashx` on the 2026-11-09 public catalog
+- [Which GLM (Zhipu AI) model ids are listed on AAPI? (zh-CN)](https://aapi.ai/topics/which-glm-models-on-aapi.zh-CN.md): Chinese GLM model-id page
+- [How do I call GLM / Zhipu models through AAPI?](https://aapi.ai/topics/how-to-call-glm-via-aapi.md): Chat Completions with a `glm-*` id; points at the 2026-11-08 `glm-5.3-flash` latency snapshot
+- [How do I call GLM / Zhipu models through AAPI? (zh-CN)](https://aapi.ai/topics/how-to-call-glm-via-aapi.zh-CN.md): Chinese GLM call page
 - [llms-full.txt](https://github.com/cozcc/aapi/blob/main/llms-full.txt): expanded quick start, env vars, and the same links
 - [curl example](https://github.com/cozcc/aapi/blob/main/examples/curl.sh): sample Chat Completions script
 - [OpenAI Python example](https://github.com/cozcc/aapi/blob/main/examples/openai_python.py): sample OpenAI SDK script

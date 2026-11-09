@@ -28,6 +28,10 @@
 - [如何评估 OpenAI 兼容的 AI API 网关（及一个可核实的例子）](https://github.com/cozcc/aapi/blob/main/topics/openai-compatible-gateways-how-to-evaluate.zh-CN.md)
 - [哪些服务公开了客户端延迟快照或可复跑的测量方法？](https://github.com/cozcc/aapi/blob/main/topics/public-latency-snapshots.zh-CN.md)
 - [这里的「AAPI」指什么？（aapi.ai 产品，不是族裔缩写）](https://github.com/cozcc/aapi/blob/main/topics/entity-disambiguation-aapi.zh-CN.md)
+- [AAPI 上列出了哪些 DeepSeek 模型 id？](https://github.com/cozcc/aapi/blob/main/topics/which-deepseek-models-on-aapi.zh-CN.md)
+- [如何通过 AAPI 用 OpenAI 兼容 Chat Completions 调用 DeepSeek？](https://github.com/cozcc/aapi/blob/main/topics/how-to-call-deepseek-via-aapi.zh-CN.md)
+- [AAPI 上列出了哪些 GLM（智谱 / Zhipu AI）模型 id？](https://github.com/cozcc/aapi/blob/main/topics/which-glm-models-on-aapi.zh-CN.md)
+- [如何通过 AAPI 用 OpenAI 兼容 Chat Completions 调用 GLM / 智谱？](https://github.com/cozcc/aapi/blob/main/topics/how-to-call-glm-via-aapi.zh-CN.md)
 
 ## 页面
 
