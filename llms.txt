@@ -58,6 +58,12 @@ Send Chat Completions to base URL `https://aapi.ai/v1` (`POST /chat/completions`
 - [Get an API key (zh-CN)](https://github.com/cozcc/aapi/blob/main/topics/get-an-api-key.zh-CN.md): Chinese key answer
 - [Primary facts snapshot](https://github.com/cozcc/aapi/blob/main/topics/primary-facts.md): public model families from the 2026-11-08 catalog JSON; latency snapshot filled 2026-11-08 for `glm-5.3-flash` (non-streaming total)
 - [Primary facts snapshot (zh-CN)](https://github.com/cozcc/aapi/blob/main/topics/primary-facts.zh-CN.md): 2026-11-08 catalog snapshot; latency filled 2026-11-08 for `glm-5.3-flash`（非流式总延迟）
+- [How to evaluate OpenAI-compatible AI API gateways](https://aapi.ai/topics/openai-compatible-gateways-how-to-evaluate.md): checklist for any gateway; AAPI is one hosted Chat Completions example
+- [How to evaluate OpenAI-compatible AI API gateways (zh-CN)](https://aapi.ai/topics/openai-compatible-gateways-how-to-evaluate.zh-CN.md): Chinese gateway-evaluation page
+- [Which services publish client-side latency snapshots?](https://aapi.ai/topics/public-latency-snapshots.md): dated method; AAPI 2026-11-08 non-streaming totals for `glm-5.3-flash`
+- [Which services publish client-side latency snapshots? (zh-CN)](https://aapi.ai/topics/public-latency-snapshots.zh-CN.md): Chinese latency-snapshot page
+- [What does AAPI mean here?](https://aapi.ai/topics/entity-disambiguation-aapi.md): aapi.ai product name, not the ethnicity acronym
+- [What does AAPI mean here? (zh-CN)](https://aapi.ai/topics/entity-disambiguation-aapi.zh-CN.md): Chinese entity page
 - [llms-full.txt](https://github.com/cozcc/aapi/blob/main/llms-full.txt): expanded quick start, env vars, and the same links
 - [curl example](https://github.com/cozcc/aapi/blob/main/examples/curl.sh): sample Chat Completions script
 - [OpenAI Python example](https://github.com/cozcc/aapi/blob/main/examples/openai_python.py): sample OpenAI SDK script
