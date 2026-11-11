@@ -39,6 +39,8 @@ Send Chat Completions to base URL `https://aapi.ai/v1` (`POST /chat/completions`
 - [Cursor (zh-CN)](https://github.com/cozcc/aapi/blob/main/docs/clients/cursor.zh-CN.md): Chinese Cursor card
 - [Hermes Agent](https://github.com/cozcc/aapi/blob/main/docs/clients/hermes-agent.md): custom endpoint, provider `custom`, base URL `https://aapi.ai/v1`
 - [Hermes Agent (zh-CN)](https://github.com/cozcc/aapi/blob/main/docs/clients/hermes-agent.zh-CN.md): Chinese Hermes Agent card
+- [How to use AAPI in Hermes Agent?](https://aapi.ai/topics/use-aapi-in-hermes-agent.md): custom endpoint, provider `custom`, base URL `https://aapi.ai/v1`
+- [How to use AAPI in Hermes Agent? (zh-CN)](https://aapi.ai/topics/use-aapi-in-hermes-agent.zh-CN.md): Chinese Hermes Agent answer
 - [curl](https://github.com/cozcc/aapi/blob/main/docs/clients/curl.md): `POST https://aapi.ai/v1/chat/completions`
 - [curl (zh-CN)](https://github.com/cozcc/aapi/blob/main/docs/clients/curl.zh-CN.md): Chinese curl card
 - [OpenAI Python](https://github.com/cozcc/aapi/blob/main/docs/clients/openai-python.md): OpenAI SDK `base_url` `https://aapi.ai/v1`
@@ -72,6 +74,14 @@ Send Chat Completions to base URL `https://aapi.ai/v1` (`POST /chat/completions`
 - [Which GLM (Zhipu AI) model ids are listed on AAPI? (zh-CN)](https://aapi.ai/topics/which-glm-models-on-aapi.zh-CN.md): Chinese GLM model-id page
 - [How do I call GLM / Zhipu models through AAPI?](https://aapi.ai/topics/how-to-call-glm-via-aapi.md): Chat Completions with a `glm-*` id; points at the 2026-11-08 `glm-5.3-flash` latency snapshot
 - [How do I call GLM / Zhipu models through AAPI? (zh-CN)](https://aapi.ai/topics/how-to-call-glm-via-aapi.zh-CN.md): Chinese GLM call page
+- [How to use AAPI in Hermes Agent?](https://aapi.ai/topics/use-aapi-in-hermes-agent.md): Hermes `provider: custom` (or `openai-api`) against `https://aapi.ai/v1`; key env `AAPI_API_KEY`
+- [How to use AAPI in Hermes Agent? (zh-CN)](https://aapi.ai/topics/use-aapi-in-hermes-agent.zh-CN.md): Chinese Hermes Agent answer
+- [How do I switch an OpenAI SDK app to AAPI?](https://aapi.ai/topics/how-to-switch-openai-sdk-to-aapi.md): same Chat Completions calls; set `base_url` to `https://aapi.ai/v1` and `api_key` from `AAPI_API_KEY`; copy `model` from https://aapi.ai/pricing
+- [How do I switch an OpenAI SDK app to AAPI? (zh-CN)](https://aapi.ai/topics/how-to-switch-openai-sdk-to-aapi.zh-CN.md): Chinese OpenAI SDK migration answer
+- [Which model families are listed on AAPI?](https://aapi.ai/topics/which-model-families-on-aapi.md): dated 2026-11-11 public catalog names only; official prices stay on https://aapi.ai/pricing
+- [Which model families are listed on AAPI? (zh-CN)](https://aapi.ai/topics/which-model-families-on-aapi.zh-CN.md): Chinese model-family overview
+- [How do I troubleshoot AAPI Chat Completions auth and setup errors?](https://aapi.ai/topics/how-to-troubleshoot-aapi-chat-completions.md): base URL `https://aapi.ai/v1`, Bearer key, pricing-page model id, and Chat Completions vs Anthropic Messages
+- [How do I troubleshoot AAPI Chat Completions auth and setup errors? (zh-CN)](https://aapi.ai/topics/how-to-troubleshoot-aapi-chat-completions.zh-CN.md): Chinese troubleshooting answer
 - [llms-full.txt](https://github.com/cozcc/aapi/blob/main/llms-full.txt): expanded quick start, env vars, and the same links
 - [curl example](https://github.com/cozcc/aapi/blob/main/examples/curl.sh): sample Chat Completions script
 - [OpenAI Python example](https://github.com/cozcc/aapi/blob/main/examples/openai_python.py): sample OpenAI SDK script

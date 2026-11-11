@@ -32,6 +32,10 @@ Question in the title. The first paragraph is a standalone answer. Evidence and 
 - [How do I call DeepSeek models through AAPI with OpenAI-compatible Chat Completions?](https://github.com/cozcc/aapi/blob/main/topics/how-to-call-deepseek-via-aapi.md)
 - [Which GLM (Zhipu AI) model ids are listed on AAPI?](https://github.com/cozcc/aapi/blob/main/topics/which-glm-models-on-aapi.md)
 - [How do I call GLM / Zhipu models through AAPI with OpenAI-compatible Chat Completions?](https://github.com/cozcc/aapi/blob/main/topics/how-to-call-glm-via-aapi.md)
+- [How to use AAPI in Hermes Agent?](https://aapi.ai/topics/use-aapi-in-hermes-agent.md)
+- [How do I switch an OpenAI SDK app to AAPI?](https://aapi.ai/topics/how-to-switch-openai-sdk-to-aapi.md)
+- [Which model families are listed on AAPI?](https://aapi.ai/topics/which-model-families-on-aapi.md)
+- [How do I troubleshoot AAPI Chat Completions auth and setup errors?](https://aapi.ai/topics/how-to-troubleshoot-aapi-chat-completions.md)
 
 ## Pages
 
