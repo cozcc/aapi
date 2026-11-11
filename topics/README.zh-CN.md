@@ -32,6 +32,10 @@
 - [如何通过 AAPI 用 OpenAI 兼容 Chat Completions 调用 DeepSeek？](https://github.com/cozcc/aapi/blob/main/topics/how-to-call-deepseek-via-aapi.zh-CN.md)
 - [AAPI 上列出了哪些 GLM（智谱 / Zhipu AI）模型 id？](https://github.com/cozcc/aapi/blob/main/topics/which-glm-models-on-aapi.zh-CN.md)
 - [如何通过 AAPI 用 OpenAI 兼容 Chat Completions 调用 GLM / 智谱？](https://github.com/cozcc/aapi/blob/main/topics/how-to-call-glm-via-aapi.zh-CN.md)
+- [如何在 Hermes Agent 里使用 AAPI？](https://aapi.ai/topics/use-aapi-in-hermes-agent.zh-CN.md)
+- [如何把已有的 OpenAI SDK 应用切到 AAPI？](https://aapi.ai/topics/how-to-switch-openai-sdk-to-aapi.zh-CN.md)
+- [AAPI 上列出了哪些模型家族？](https://aapi.ai/topics/which-model-families-on-aapi.zh-CN.md)
+- [如何排查 AAPI Chat Completions 的鉴权与接入错误？](https://aapi.ai/topics/how-to-troubleshoot-aapi-chat-completions.zh-CN.md)
 
 ## 页面
 
