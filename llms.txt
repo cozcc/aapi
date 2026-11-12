@@ -23,6 +23,8 @@ Send Chat Completions to base URL `https://aapi.ai/v1` (`POST /chat/completions`
 - [How to get an AAPI API key?](https://aapi.ai/topics/get-an-api-key.md): console at https://aapi.ai, env AAPI_API_KEY
 - [Client setup overview](https://aapi.ai/topics/client-setup.md): shared base URL, key env, and which clients fit
 - [Client setup overview (zh-CN)](https://aapi.ai/topics/client-setup.zh-CN.md): Chinese client-setup overview
+- [How to custom-fill https://aapi.ai/v1 in CC Switch?](https://aapi.ai/topics/use-aapi-in-cc-switch.md): Custom Configuration; not a built-in preset
+- [How to custom-fill https://aapi.ai/v1 in All API Hub?](https://aapi.ai/topics/use-aapi-in-all-api-hub.md): credentials library uses `https://aapi.ai/v1`; account form uses `https://aapi.ai`
 - [Docs repository](https://github.com/cozcc/aapi): public docs and examples; no server source
 
 ## Pricing
@@ -76,6 +78,14 @@ Send Chat Completions to base URL `https://aapi.ai/v1` (`POST /chat/completions`
 - [How do I call GLM / Zhipu models through AAPI? (zh-CN)](https://aapi.ai/topics/how-to-call-glm-via-aapi.zh-CN.md): Chinese GLM call page
 - [How to use AAPI in Hermes Agent?](https://aapi.ai/topics/use-aapi-in-hermes-agent.md): Hermes `provider: custom` (or `openai-api`) against `https://aapi.ai/v1`; key env `AAPI_API_KEY`
 - [How to use AAPI in Hermes Agent? (zh-CN)](https://aapi.ai/topics/use-aapi-in-hermes-agent.zh-CN.md): Chinese Hermes Agent answer
+- [CC Switch](https://github.com/cozcc/aapi/blob/main/docs/clients/cc-switch.md): custom-fill so the request is `POST https://aapi.ai/v1/chat/completions`; not a built-in preset
+- [CC Switch (zh-CN)](https://github.com/cozcc/aapi/blob/main/docs/clients/cc-switch.zh-CN.md): Chinese CC Switch card
+- [How to custom-fill https://aapi.ai/v1 in CC Switch?](https://aapi.ai/topics/use-aapi-in-cc-switch.md): Custom Configuration; match the endpoint field; do not set `ANTHROPIC_BASE_URL` to this URL
+- [How to custom-fill https://aapi.ai/v1 in CC Switch? (zh-CN)](https://aapi.ai/topics/use-aapi-in-cc-switch.zh-CN.md): Chinese CC Switch answer
+- [All API Hub](https://github.com/cozcc/aapi/blob/main/docs/clients/all-api-hub.md): credentials library Base URL `https://aapi.ai/v1`; account form uses site root `https://aapi.ai`
+- [All API Hub (zh-CN)](https://github.com/cozcc/aapi/blob/main/docs/clients/all-api-hub.zh-CN.md): Chinese All API Hub card
+- [How to custom-fill https://aapi.ai/v1 in All API Hub?](https://aapi.ai/topics/use-aapi-in-all-api-hub.md): credentials library takes `https://aapi.ai/v1`; the account website URL is `https://aapi.ai`
+- [How to custom-fill https://aapi.ai/v1 in All API Hub? (zh-CN)](https://aapi.ai/topics/use-aapi-in-all-api-hub.zh-CN.md): Chinese All API Hub answer
 - [How do I switch an OpenAI SDK app to AAPI?](https://aapi.ai/topics/how-to-switch-openai-sdk-to-aapi.md): same Chat Completions calls; set `base_url` to `https://aapi.ai/v1` and `api_key` from `AAPI_API_KEY`; copy `model` from https://aapi.ai/pricing
 - [How do I switch an OpenAI SDK app to AAPI? (zh-CN)](https://aapi.ai/topics/how-to-switch-openai-sdk-to-aapi.zh-CN.md): Chinese OpenAI SDK migration answer
 - [Which model families are listed on AAPI?](https://aapi.ai/topics/which-model-families-on-aapi.md): dated 2026-11-12 public catalog names only; `deepseek-v4-pro` and `grok-4.7` are not in that JSON; official prices stay on https://aapi.ai/pricing

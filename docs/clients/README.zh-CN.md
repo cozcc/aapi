@@ -27,6 +27,8 @@ OPENAI_API_KEY=$AAPI_API_KEY
 
 - [Cursor](./cursor.zh-CN.md) — Settings → Models，Override OpenAI Base URL
 - [Hermes Agent](./hermes-agent.zh-CN.md) — 自定义 OpenAI 兼容端点
+- [CC Switch](./cc-switch.zh-CN.md) — 自定义填写 `https://aapi.ai/v1`；不是内置预设
+- [All API Hub](./all-api-hub.zh-CN.md) — 凭据库 Base URL 为 `https://aapi.ai/v1`；账号表单填网站根地址 `https://aapi.ai`
 - [curl](./curl.zh-CN.md) — `examples/curl.sh`
 - [OpenAI Python](./openai-python.zh-CN.md) — `examples/openai_python.py`
 - [Claude Code](./claude-code.zh-CN.md) — Anthropic Messages 客户端；与这里的 Chat Completions URL 不是同一协议

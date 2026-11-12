@@ -88,6 +88,8 @@ Model:    an id from https://aapi.ai/pricing
 
 - [Cursor](https://github.com/cozcc/aapi/blob/main/docs/clients/cursor.md) · [zh-CN](https://github.com/cozcc/aapi/blob/main/docs/clients/cursor.zh-CN.md): Settings → Models, paste the AAPI key into OpenAI API Key, enable Override OpenAI Base URL, set `https://aapi.ai/v1` (include `/v1`, omit `/chat/completions`). Add a custom model whose name matches an id on the pricing page.
 - [Hermes Agent](https://github.com/cozcc/aapi/blob/main/docs/clients/hermes-agent.md) · [zh-CN](https://github.com/cozcc/aapi/blob/main/docs/clients/hermes-agent.zh-CN.md): `provider: custom`, `base_url: https://aapi.ai/v1`, `key_env: AAPI_API_KEY`. Hermes calls `POST {base_url}/chat/completions`. Provider reference: https://hermes-agent.nousresearch.com/docs/integrations/providers
+- [CC Switch](https://github.com/cozcc/aapi/blob/main/docs/clients/cc-switch.md) · [zh-CN](https://github.com/cozcc/aapi/blob/main/docs/clients/cc-switch.zh-CN.md): custom-fill so the request is `POST https://aapi.ai/v1/chat/completions`. Not a built-in preset. Match the endpoint field. Do not set `ANTHROPIC_BASE_URL` to this URL. Answer page: [use-aapi-in-cc-switch.md](https://aapi.ai/topics/use-aapi-in-cc-switch.md) · [zh-CN](https://aapi.ai/topics/use-aapi-in-cc-switch.zh-CN.md)
+- [All API Hub](https://github.com/cozcc/aapi/blob/main/docs/clients/all-api-hub.md) · [zh-CN](https://github.com/cozcc/aapi/blob/main/docs/clients/all-api-hub.zh-CN.md): credentials library Base URL `https://aapi.ai/v1`; account form uses site root `https://aapi.ai`. Answer page: [use-aapi-in-all-api-hub.md](https://aapi.ai/topics/use-aapi-in-all-api-hub.md) · [zh-CN](https://aapi.ai/topics/use-aapi-in-all-api-hub.zh-CN.md)
 - [Claude Code](https://github.com/cozcc/aapi/blob/main/docs/clients/claude-code.md) · [zh-CN](https://github.com/cozcc/aapi/blob/main/docs/clients/claude-code.zh-CN.md): `ANTHROPIC_BASE_URL` selects an Anthropic Messages gateway (`/v1/messages`). These docs do not publish that protocol for AAPI. Use a Chat Completions client above. Claude Code gateway docs: https://code.claude.com/docs/en/llm-gateway-protocol
 
 ## Docs map
@@ -101,6 +103,8 @@ Model:    an id from https://aapi.ai/pricing
 - [How to call AAPI](https://aapi.ai/topics/how-to-call-aapi.md) · [zh-CN](https://aapi.ai/topics/how-to-call-aapi.zh-CN.md)
 - [Base URL and auth header](https://aapi.ai/topics/base-url-and-auth.md) · [zh-CN](https://aapi.ai/topics/base-url-and-auth.zh-CN.md)
 - [Use AAPI in Cursor](https://aapi.ai/topics/use-aapi-in-cursor.md) · [zh-CN](https://aapi.ai/topics/use-aapi-in-cursor.zh-CN.md)
+- [Use AAPI in CC Switch](https://aapi.ai/topics/use-aapi-in-cc-switch.md) · [zh-CN](https://aapi.ai/topics/use-aapi-in-cc-switch.zh-CN.md)
+- [Use AAPI in All API Hub](https://aapi.ai/topics/use-aapi-in-all-api-hub.md) · [zh-CN](https://aapi.ai/topics/use-aapi-in-all-api-hub.zh-CN.md)
 - [AAPI vs vendor APIs](https://aapi.ai/topics/aapi-vs-vendor-apis.md) · [zh-CN](https://aapi.ai/topics/aapi-vs-vendor-apis.zh-CN.md)
 - [Official prices and model ids](https://aapi.ai/topics/official-prices-and-model-ids.md) · [zh-CN](https://aapi.ai/topics/official-prices-and-model-ids.zh-CN.md)
 - [Claude Code / Anthropic Messages](https://aapi.ai/topics/claude-code-and-anthropic-messages.md) · [zh-CN](https://aapi.ai/topics/claude-code-and-anthropic-messages.zh-CN.md)

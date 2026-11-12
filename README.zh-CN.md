@@ -86,5 +86,7 @@ Base URL：`https://aapi.ai/v1`；Key 用 AAPI 密钥；模型名以 https://aap
 
 - Hermes Agent 自定义端点：[docs/clients/hermes-agent.zh-CN.md](./docs/clients/hermes-agent.zh-CN.md)
 - Cursor：[docs/clients/cursor.zh-CN.md](./docs/clients/cursor.zh-CN.md)
+- CC Switch 自定义填写：[docs/clients/cc-switch.zh-CN.md](./docs/clients/cc-switch.zh-CN.md)
+- All API Hub 自定义填写：[docs/clients/all-api-hub.zh-CN.md](./docs/clients/all-api-hub.zh-CN.md)
 - Claude Code 的 `ANTHROPIC_BASE_URL` 走 Anthropic Messages，本仓库没有为 AAPI 公布该协议。见 [docs/clients/claude-code.zh-CN.md](./docs/clients/claude-code.zh-CN.md)。
 - 全部卡片：[docs/clients/README.zh-CN.md](./docs/clients/README.zh-CN.md)

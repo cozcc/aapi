@@ -93,7 +93,7 @@ Most OpenAI-compatible clients work if you set:
 
 Do not paste keys into chatbots, screenshots, or public issues.
 
-Per-client copy-paste cards (Cursor, Hermes Agent, Claude Code, curl, OpenAI Python): [docs/clients/README.md](./docs/clients/README.md).
+Per-client copy-paste cards (Cursor, Hermes Agent, CC Switch, All API Hub, Claude Code, curl, OpenAI Python): [docs/clients/README.md](./docs/clients/README.md).
 
 ---
 
@@ -122,6 +122,10 @@ Docs and examples in this repository are under [MIT](./LICENSE).
 **Hermes Agent** (custom OpenAI-compatible endpoint): set provider/base URL to `https://aapi.ai/v1` and use your AAPI key as the API key. Prefer env vars over hard-coding. Full card: [docs/clients/hermes-agent.md](./docs/clients/hermes-agent.md).
 
 **Cursor / OpenAI-compatible clients:** Base URL `https://aapi.ai/v1`, API Key = AAPI key, model = an ID from https://aapi.ai/pricing. Full card: [docs/clients/cursor.md](./docs/clients/cursor.md).
+
+**CC Switch:** custom-fill so the request is `POST https://aapi.ai/v1/chat/completions`. AAPI is not a built-in preset. Full card: [docs/clients/cc-switch.md](./docs/clients/cc-switch.md).
+
+**All API Hub:** credentials library Base URL `https://aapi.ai/v1`; the account form uses the site root `https://aapi.ai`. Full card: [docs/clients/all-api-hub.md](./docs/clients/all-api-hub.md).
 
 Claude Code's `ANTHROPIC_BASE_URL` speaks Anthropic Messages, which these docs do not publish for AAPI. See [docs/clients/claude-code.md](./docs/clients/claude-code.md).
 

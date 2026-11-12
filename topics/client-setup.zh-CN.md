@@ -23,6 +23,8 @@ OPENAI_API_KEY=$AAPI_API_KEY
 | --- | --- | --- |
 | Cursor | [cursor.zh-CN.md](../docs/clients/cursor.zh-CN.md) | 是。Override OpenAI Base URL。 |
 | Hermes Agent | [hermes-agent.zh-CN.md](../docs/clients/hermes-agent.zh-CN.md) | 是。自定义端点，provider `custom`。 |
+| CC Switch | [cc-switch.zh-CN.md](../docs/clients/cc-switch.zh-CN.md) | 是，作为自定义填写。不是内置预设。按端点栏的用法填写，使请求为 `POST https://aapi.ai/v1/chat/completions`。不要把 `ANTHROPIC_BASE_URL` 设成这个地址。 |
+| All API Hub | [all-api-hub.zh-CN.md](../docs/clients/all-api-hub.zh-CN.md) | 是，在凭据库里填 Base URL `https://aapi.ai/v1`。账号表单填网站根地址 `https://aapi.ai`，不要填 `/v1`。 |
 | curl | [curl.zh-CN.md](../docs/clients/curl.zh-CN.md) | 是。 |
 | OpenAI Python | [openai-python.zh-CN.md](../docs/clients/openai-python.zh-CN.md) | 是。 |
 | Claude Code | [claude-code.zh-CN.md](../docs/clients/claude-code.zh-CN.md) | 否。Claude Code 的 `ANTHROPIC_BASE_URL` 走 Anthropic Messages（`/v1/messages`）。请用上面的 Chat Completions 卡片。 |
