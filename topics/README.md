@@ -24,7 +24,7 @@ Question in the title. The first paragraph is a standalone answer. Evidence and 
 - [Where are official AAPI prices and model ids?](https://github.com/cozcc/aapi/blob/main/topics/official-prices-and-model-ids.md)
 - [Does AAPI support Claude Code / Anthropic Messages?](https://github.com/cozcc/aapi/blob/main/topics/claude-code-and-anthropic-messages.md)
 - [How to get an AAPI API key?](https://github.com/cozcc/aapi/blob/main/topics/get-an-api-key.md)
-- [Primary facts snapshot](https://github.com/cozcc/aapi/blob/main/topics/primary-facts.md) — catalog 2026-11-08; latency cells say "needs API key"
+- [Primary facts snapshot](https://github.com/cozcc/aapi/blob/main/topics/primary-facts.md) — catalog 2026-11-12; latency row remains the 2026-11-08 measurement
 - [How to evaluate OpenAI-compatible AI API gateways (and one concrete example)](https://github.com/cozcc/aapi/blob/main/topics/openai-compatible-gateways-how-to-evaluate.md)
 - [Which services publish client-side latency snapshots or a reproducible measurement method?](https://github.com/cozcc/aapi/blob/main/topics/public-latency-snapshots.md)
 - [What does “AAPI” mean here? (aapi.ai product, not the ethnicity acronym)](https://github.com/cozcc/aapi/blob/main/topics/entity-disambiguation-aapi.md)

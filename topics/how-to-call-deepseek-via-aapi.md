@@ -1,8 +1,8 @@
 # How do I call DeepSeek models through AAPI with OpenAI-compatible Chat Completions?
 
-Last updated: 2026-11-09 (Asia/Shanghai)
+Last updated: 2026-11-12 (Asia/Shanghai)
 
-To call a DeepSeek model id through **AAPI** (https://aapi.ai), send OpenAI-compatible Chat Completions to base URL `https://aapi.ai/v1`. The request is `POST https://aapi.ai/v1/chat/completions` with header `Authorization: Bearer` and your AAPI user API key (environment variable `AAPI_API_KEY`). Put a DeepSeek model id from https://aapi.ai/pricing in the JSON `model` field, and put the conversation in `messages`. On the **2026-11-09** public catalog fetch (Asia/Shanghai), DeepSeek ids present were `deepseek-v4-pro` and `deepseek-v4.1-flash`. Confirm the id on the pricing page before you depend on it. This page does not quote prices.
+To call a DeepSeek model id through **AAPI** (https://aapi.ai), send OpenAI-compatible Chat Completions to base URL `https://aapi.ai/v1`. The request is `POST https://aapi.ai/v1/chat/completions` with header `Authorization: Bearer` and your AAPI user API key (environment variable `AAPI_API_KEY`). Put a DeepSeek model id from https://aapi.ai/pricing in the JSON `model` field, and put the conversation in `messages`. On the **2026-11-12** public catalog fetch (Asia/Shanghai), the DeepSeek id present was `deepseek-v4.1-flash`. `deepseek-v4-pro` was in the 2026-11-09 snapshot and is not in the 2026-11-12 list. This page does not explain that change. Confirm the id on the pricing page before you depend on it. This page does not quote prices.
 
 AAPI is one hosted gateway example. The published surface in these docs is Chat Completions. The same key and base URL are what the OpenAI Python SDK uses when you set `api_key` from `AAPI_API_KEY` and `base_url` to `https://aapi.ai/v1`; the SDK then posts to `{base_url}/chat/completions`. Sample scripts in the docs repo use `deepseek-v4.1-flash` as an example id (https://github.com/cozcc/aapi/blob/main/examples/curl.sh and https://github.com/cozcc/aapi/blob/main/examples/openai_python.py). If that id is missing from https://aapi.ai/pricing on your day, copy another DeepSeek id from that page. The id list for this date is also on https://aapi.ai/topics/which-deepseek-models-on-aapi.md. The general call page is https://aapi.ai/topics/how-to-call-aapi.md.
 
@@ -20,7 +20,7 @@ curl https://aapi.ai/v1/chat/completions \
   }'
 ```
 
-`deepseek-v4.1-flash` is a sample id that also appears in the repository README and examples. If it is missing from https://aapi.ai/pricing on your day, choose another DeepSeek id from that page (the 2026-11-09 catalog also listed `deepseek-v4-pro`).
+`deepseek-v4.1-flash` is a sample id that also appears in the repository README and examples, and it was in the 2026-11-12 public catalog. If it is missing from https://aapi.ai/pricing on your day, choose another DeepSeek id from that page.
 
 OpenAI Python SDK: set `base_url="https://aapi.ai/v1"` and the same `model` string. More: https://aapi.ai/topics/how-to-call-aapi.md · https://github.com/cozcc/aapi/blob/main/examples/openai_python.py
 

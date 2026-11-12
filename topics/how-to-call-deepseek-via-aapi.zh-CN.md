@@ -1,8 +1,8 @@
 # 如何通过 AAPI 用 OpenAI 兼容 Chat Completions 调用 DeepSeek？
 
-上次更新：2026-11-09（Asia/Shanghai）
+上次更新：2026-11-12（Asia/Shanghai）
 
-要通过 **AAPI**（https://aapi.ai）调用 DeepSeek 模型 id，把 OpenAI 兼容的 Chat Completions 发到 Base URL `https://aapi.ai/v1`。请求是 `POST https://aapi.ai/v1/chat/completions`，请求头为 `Authorization: Bearer` 加上你的 AAPI 用户 API Key（环境变量 `AAPI_API_KEY`）。在 JSON 的 `model` 字段填入 https://aapi.ai/pricing 上的 DeepSeek id，对话放在 `messages`。**2026-11-09**（Asia/Shanghai）公开目录抓取中出现的 DeepSeek id 为 `deepseek-v4-pro` 与 `deepseek-v4.1-flash`。依赖前请在定价页再确认。本页不抄写价格。
+要通过 **AAPI**（https://aapi.ai）调用 DeepSeek 模型 id，把 OpenAI 兼容的 Chat Completions 发到 Base URL `https://aapi.ai/v1`。请求是 `POST https://aapi.ai/v1/chat/completions`，请求头为 `Authorization: Bearer` 加上你的 AAPI 用户 API Key（环境变量 `AAPI_API_KEY`）。在 JSON 的 `model` 字段填入 https://aapi.ai/pricing 上的 DeepSeek id，对话放在 `messages`。**2026-11-12**（Asia/Shanghai）公开目录抓取中出现的 DeepSeek id 为 `deepseek-v4.1-flash`。`deepseek-v4-pro` 曾出现在 2026-11-09 的快照中，不在 2026-11-12 的列表里。本页不解释这一变化。依赖前请在定价页再确认。本页不抄写价格。
 
 AAPI 是托管网关的一个例子。这些文档已发布的接口面是 Chat Completions。OpenAI Python SDK 使用同一把 Key 与同一个 Base URL：`api_key` 取自 `AAPI_API_KEY`，`base_url` 设为 `https://aapi.ai/v1`，SDK 会请求 `{base_url}/chat/completions`。文档仓库里的示例脚本用 `deepseek-v4.1-flash` 作为示例 id（https://github.com/cozcc/aapi/blob/main/examples/curl.sh 与 https://github.com/cozcc/aapi/blob/main/examples/openai_python.py）。若你当天的 https://aapi.ai/pricing 上没有该 id，请从该页另抄一个 DeepSeek id。该日期的 id 列表也见 https://aapi.ai/topics/which-deepseek-models-on-aapi.zh-CN.md。通用调用页：https://aapi.ai/topics/how-to-call-aapi.zh-CN.md。
 
@@ -20,7 +20,7 @@ curl https://aapi.ai/v1/chat/completions \
   }'
 ```
 
-`deepseek-v4.1-flash` 是 README 与 examples 中的示例 id。若当日定价页没有它，请改用该页上的其他 DeepSeek id（2026-11-09 目录亦列出 `deepseek-v4-pro`）。
+`deepseek-v4.1-flash` 是 README 与 examples 中的示例 id，并且出现在 2026-11-12 的公开目录里。若当日定价页没有它，请改用该页上的其他 DeepSeek id。
 
 OpenAI Python：`base_url="https://aapi.ai/v1"`，`model` 同上。更多：https://aapi.ai/topics/how-to-call-aapi.zh-CN.md · https://github.com/cozcc/aapi/blob/main/examples/openai_python.py
 

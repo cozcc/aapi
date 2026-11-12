@@ -1,12 +1,12 @@
 # AAPI 公开事实快照
 
-上次更新：2026-11-08（Asia/Shanghai）
+上次更新：2026-11-12（Asia/Shanghai）
 
-本页是重复发布的公开快照。它从公开目录 JSON 列出模型 id 与系列名称，链到官方价格，并且只在实际测量之后记录客户端延迟。美元金额留在 https://aapi.ai/pricing，不写入本文件。
+本页是重复发布的公开快照。它从公开目录 JSON 列出模型 id 与系列名称，链到官方价格，并且只在实际测量之后记录客户端延迟。美元金额留在 https://aapi.ai/pricing，不写入本文件。依赖某个 id 之前，请再核对 https://aapi.ai/pricing。
 
-**本次目录拉取：** `GET https://aapi.ai/api/pricing` → HTTP 200 `application/json`，时间 2026-11-08 18:14:21 Asia/Shanghai（UTC 2026-11-08T10:14:21Z）。响应含 `data` 与 `vendors`。
+**本次目录拉取：** `GET https://aapi.ai/api/pricing` → HTTP 200 `application/json`，时间 2026-11-12 11:26:11 Asia/Shanghai（UTC 2026-11-12T03:26:11Z）。响应含 `data`（14 个模型 id）与 `vendors`（8 个）。
 
-**本次延迟：** 已于 2026-11-08 19:26:10 CST（Asia/Shanghai）由 Asia/Shanghai box 客户端测得。`glm-5.3-flash`（Zhipu AI 系列）在 `POST https://aapi.ai/v1/chat/completions` 上的非流式总延迟：中位数 2930 ms，p95 3814 ms，丢弃 1 次预热后样本 20，HTTP 错误 0。总延迟是客户端墙上时钟，从请求开始到响应正文接收完毕（`temperature` 0，一条用户消息 `ping`）。这些数字是该日期该协议下的非流式总延迟，不是流式首字节时间。
+**本次延迟：** 2026-11-12 未重测。最近一次已公布的测量仍是 2026-11-08 19:26:10 CST（Asia/Shanghai），由 Asia/Shanghai box 客户端测得。`glm-5.3-flash`（Zhipu AI 系列）在 `POST https://aapi.ai/v1/chat/completions` 上的非流式总延迟：中位数 2930 ms，p95 3814 ms，丢弃 1 次预热后样本 20，HTTP 错误 0。总延迟是客户端墙上时钟，从请求开始到响应正文接收完毕（`temperature` 0，一条用户消息 `ping`）。这些数字是该日期该协议下的非流式总延迟，不是流式首字节时间。
 
 ## 快照可以包含什么
 
@@ -42,9 +42,9 @@
 - 失败次数计入尝试总数，并把错误次数写在延迟旁边。
 - 在备注里写明客户端和地区。单次样本只是一次观察，公布的行使用上面的 20 次测量。
 
-## 公开模型系列（2026-11-08）
+## 公开模型系列（2026-11-12）
 
-来源：`GET https://aapi.ai/api/pricing`（无需账户）。系列 = 按 `vendor_id` 匹配的 `vendors[].name`；无 `vendor_id` 时为 `unknown`。按系列、再按模型 id 排序。**不含价格。**
+来源：`GET https://aapi.ai/api/pricing`（无需账户），时间 2026-11-12 11:26:11 Asia/Shanghai（UTC 2026-11-12T03:26:11Z）。系列 = 按 `vendor_id` 匹配的 `vendors[].name`；无 `vendor_id` 时为 `unknown`。按系列、再按模型 id 排序。**不含价格。**
 
 | 系列 | 模型 id |
 | --- | --- |
@@ -53,7 +53,6 @@
 | Anthropic | `claude-haiku-5-5` |
 | Anthropic | `claude-opus-4-8` |
 | Anthropic | `claude-opus-5-5` |
-| DeepSeek | `deepseek-v4-pro` |
 | DeepSeek | `deepseek-v4.1-flash` |
 | Moonshot | `kimi-k3` |
 | OpenAI | `gpt-6-astra` |
@@ -63,13 +62,16 @@
 | Zhipu AI | `glm-5.3-flash` |
 | Zhipu AI | `glm-5.3-flashx` |
 | unknown | `kimi-k3.1-pro` |
-| xAI | `grok-4.7` |
 
-同次 JSON 中的 vendors（id → name）：35 DeepSeek、36 Zhipu AI、38 OpenAI、39 Anthropic、40 xAI、41 字节跳动、42 Alibaba、43 Moonshot。厂商 41 本次无对应 `data` 行。`kimi-k3.1-pro` 无 `vendor_id` → 按协议系列为 `unknown`。
+同次 JSON 中的 vendors（id → name）：35 DeepSeek、36 Zhipu AI、38 OpenAI、39 Anthropic、40 xAI、41 字节跳动、42 Alibaba、43 Moonshot。厂商 40（xAI）与厂商 41（字节跳动）本次无对应 `data` 行。`kimi-k3.1-pro` 无 `vendor_id` → 按协议系列为 `unknown`。
+
+本页 2026-11-08 的快照曾列出 `deepseek-v4-pro`（DeepSeek）与 `grok-4.7`（xAI）。这两个 id 不在 2026-11-12 的列表中。本页不解释这一变化。请再核对 https://aapi.ai/pricing。
 
 官方标价：https://aapi.ai/pricing
 
 ## 延迟快照
+
+2026-11-12 没有新的延迟行。下表是 2026-11-08 的测量。
 
 | UTC 日期 | 模型 id | 系列 | 总延迟中位数 | 总延迟 p95 | 样本数 | 地区 | HTTP 错误 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -83,6 +85,6 @@
 - 目录 JSON：https://aapi.ai/api/pricing
 - 价格在哪里读：https://github.com/cozcc/aapi/blob/main/topics/official-prices-and-model-ids.zh-CN.md
 - Chat Completions 地址：https://aapi.ai/v1/chat/completions
-- 同日探针：`GET /v1/models` → 401；`GET /api/models` → 401；`GET /api/pricing/public` → 404。本次无鉴权公开目录仅为 `/api/pricing`。
+- 2026-11-12 探针：`GET /v1/models` → 401；`GET /api/models` → 401；`GET /api/pricing/public` → 404。本次无鉴权公开目录仅为 `/api/pricing`。
 
 English: https://github.com/cozcc/aapi/blob/main/topics/primary-facts.md

@@ -24,7 +24,7 @@
 - [AAPI 的官方价格和模型 ID 在哪里？](https://github.com/cozcc/aapi/blob/main/topics/official-prices-and-model-ids.zh-CN.md)
 - [AAPI 支持 Claude Code / Anthropic Messages 吗？](https://github.com/cozcc/aapi/blob/main/topics/claude-code-and-anthropic-messages.zh-CN.md)
 - [如何获取 AAPI 的 API Key？](https://github.com/cozcc/aapi/blob/main/topics/get-an-api-key.zh-CN.md)
-- [公开事实快照](https://github.com/cozcc/aapi/blob/main/topics/primary-facts.zh-CN.md) — 目录快照 2026-11-08；延迟单元格为「需 Key 后填」
+- [公开事实快照](https://github.com/cozcc/aapi/blob/main/topics/primary-facts.zh-CN.md) — 目录快照 2026-11-12；延迟行仍是 2026-11-08 的测量
 - [如何评估 OpenAI 兼容的 AI API 网关（及一个可核实的例子）](https://github.com/cozcc/aapi/blob/main/topics/openai-compatible-gateways-how-to-evaluate.zh-CN.md)
 - [哪些服务公开了客户端延迟快照或可复跑的测量方法？](https://github.com/cozcc/aapi/blob/main/topics/public-latency-snapshots.zh-CN.md)
 - [这里的「AAPI」指什么？（aapi.ai 产品，不是族裔缩写）](https://github.com/cozcc/aapi/blob/main/topics/entity-disambiguation-aapi.zh-CN.md)
