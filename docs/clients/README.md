@@ -27,6 +27,8 @@ Sample `model` used in [`examples/`](../../examples/): `deepseek-v4.1-flash`. Co
 
 - [Cursor](./cursor.md) — Settings → Models, Override OpenAI Base URL
 - [Hermes Agent](./hermes-agent.md) — custom OpenAI-compatible endpoint
+- [CC Switch](./cc-switch.md) — custom-fill `https://aapi.ai/v1`; not a built-in preset
+- [All API Hub](./all-api-hub.md) — credentials library Base URL `https://aapi.ai/v1`; account form uses site root `https://aapi.ai`
 - [curl](./curl.md) — `examples/curl.sh`
 - [OpenAI Python](./openai-python.md) — `examples/openai_python.py`
 - [Claude Code](./claude-code.md) — Anthropic Messages client; this Chat Completions URL is a different protocol

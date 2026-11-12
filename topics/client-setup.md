@@ -23,6 +23,8 @@ OPENAI_API_KEY=$AAPI_API_KEY
 | --- | --- | --- |
 | Cursor | [cursor.md](../docs/clients/cursor.md) | Yes. Override OpenAI Base URL. |
 | Hermes Agent | [hermes-agent.md](../docs/clients/hermes-agent.md) | Yes. Custom endpoint, provider `custom`. |
+| CC Switch | [cc-switch.md](../docs/clients/cc-switch.md) | Yes, as a custom fill. Not a built-in preset. Match the endpoint field so the request is `POST https://aapi.ai/v1/chat/completions`. Do not set `ANTHROPIC_BASE_URL` to this URL. |
+| All API Hub | [all-api-hub.md](../docs/clients/all-api-hub.md) | Yes, in the credentials library: Base URL `https://aapi.ai/v1`. The account form uses the site root `https://aapi.ai`, not `/v1`. |
 | curl | [curl.md](../docs/clients/curl.md) | Yes. |
 | OpenAI Python | [openai-python.md](../docs/clients/openai-python.md) | Yes. |
 | Claude Code | [claude-code.md](../docs/clients/claude-code.md) | No. Claude Code's `ANTHROPIC_BASE_URL` speaks Anthropic Messages (`/v1/messages`). Use one of the Chat Completions cards above. |
