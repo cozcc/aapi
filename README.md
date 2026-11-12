@@ -73,13 +73,13 @@ Example model IDs (verify on the pricing page before use):
 | Model ID | Family (indicative) |
 | --- | --- |
 | `deepseek-v4.1-flash` | DeepSeek |
-| `deepseek-v4-pro` | DeepSeek |
 | `glm-5.3` / `glm-5.3-flash` / `glm-5.3-flashx` | Zhipu |
 | `qwen3.8-max` | Qwen |
 | `kimi-k3` / `kimi-k3.1-pro` | Moonshot |
 | `gpt-6-astra` / `gpt-6-sol` / `gpt-6.1-sol` | OpenAI-compatible naming |
 | `claude-haiku-5-5` / `claude-opus-4-8` / `claude-opus-5-5` / `claude-fable-5-1` | Anthropic-compatible naming |
-| `grok-4.7` | xAI |
+
+`deepseek-v4-pro` and `grok-4.7` were in the 2026-11-08 public catalog snapshot and are not in the 2026-11-12 `GET https://aapi.ai/api/pricing` list. This page does not explain that change. Re-check https://aapi.ai/pricing.
 
 ---
 
