@@ -9,27 +9,27 @@ Send Chat Completions to base URL `https://aapi.ai/v1` (`POST /chat/completions`
 - [README](https://github.com/cozcc/aapi/blob/main/README.md): English quick start for Chat Completions
 - [README (zh-CN)](https://github.com/cozcc/aapi/blob/main/README.zh-CN.md): same quick start in Chinese
 - [Security policy](https://github.com/cozcc/aapi/blob/main/SECURITY.md): report vulnerabilities in private
-- [Topics index](https://github.com/cozcc/aapi/blob/main/topics/README.md): base URL, pricing pointer, and client-card index
-- [Topics index (zh-CN)](https://github.com/cozcc/aapi/blob/main/topics/README.zh-CN.md): Chinese topic index
-- [Chat Completions](https://github.com/cozcc/aapi/blob/main/topics/openai-chat-completions.md): base URL, auth header, and request body
-- [Chat Completions (zh-CN)](https://github.com/cozcc/aapi/blob/main/topics/openai-chat-completions.zh-CN.md): Chinese Chat Completions page
-- [What is AAPI?](https://github.com/cozcc/aapi/blob/main/topics/what-is-aapi.md): hosted product, one key, Chat Completions base URL
-- [How to call AAPI with OpenAI-compatible Chat Completions?](https://github.com/cozcc/aapi/blob/main/topics/how-to-call-aapi.md): POST https://aapi.ai/v1/chat/completions
-- [What is AAPI Base URL and auth header?](https://github.com/cozcc/aapi/blob/main/topics/base-url-and-auth.md): https://aapi.ai/v1 and Authorization Bearer
-- [How to use AAPI in Cursor?](https://github.com/cozcc/aapi/blob/main/topics/use-aapi-in-cursor.md): Override OpenAI Base URL
-- [AAPI vs using vendor APIs directly](https://github.com/cozcc/aapi/blob/main/topics/aapi-vs-vendor-apis.md): one key and one Chat Completions URL, versus per-vendor keys and URLs
-- [Where are official AAPI prices and model ids?](https://github.com/cozcc/aapi/blob/main/topics/official-prices-and-model-ids.md): https://aapi.ai/pricing
-- [Does AAPI support Claude Code / Anthropic Messages?](https://github.com/cozcc/aapi/blob/main/topics/claude-code-and-anthropic-messages.md): published surface is Chat Completions
-- [How to get an AAPI API key?](https://github.com/cozcc/aapi/blob/main/topics/get-an-api-key.md): console at https://aapi.ai, env AAPI_API_KEY
-- [Client setup overview](https://github.com/cozcc/aapi/blob/main/topics/client-setup.md): shared base URL, key env, and which clients fit
-- [Client setup overview (zh-CN)](https://github.com/cozcc/aapi/blob/main/topics/client-setup.zh-CN.md): Chinese client-setup overview
+- [Topics index](https://aapi.ai/topics/README.md): base URL, pricing pointer, and client-card index
+- [Topics index (zh-CN)](https://aapi.ai/topics/README.zh-CN.md): Chinese topic index
+- [Chat Completions](https://aapi.ai/topics/openai-chat-completions.md): base URL, auth header, and request body
+- [Chat Completions (zh-CN)](https://aapi.ai/topics/openai-chat-completions.zh-CN.md): Chinese Chat Completions page
+- [What is AAPI?](https://aapi.ai/topics/what-is-aapi.md): hosted product, one key, Chat Completions base URL
+- [How to call AAPI with OpenAI-compatible Chat Completions?](https://aapi.ai/topics/how-to-call-aapi.md): POST https://aapi.ai/v1/chat/completions
+- [What is AAPI Base URL and auth header?](https://aapi.ai/topics/base-url-and-auth.md): https://aapi.ai/v1 and Authorization Bearer
+- [How to use AAPI in Cursor?](https://aapi.ai/topics/use-aapi-in-cursor.md): Override OpenAI Base URL
+- [AAPI vs using vendor APIs directly](https://aapi.ai/topics/aapi-vs-vendor-apis.md): one key and one Chat Completions URL, versus per-vendor keys and URLs
+- [Where are official AAPI prices and model ids?](https://aapi.ai/topics/official-prices-and-model-ids.md): https://aapi.ai/pricing
+- [Does AAPI support Claude Code / Anthropic Messages?](https://aapi.ai/topics/claude-code-and-anthropic-messages.md): published surface is Chat Completions
+- [How to get an AAPI API key?](https://aapi.ai/topics/get-an-api-key.md): console at https://aapi.ai, env AAPI_API_KEY
+- [Client setup overview](https://aapi.ai/topics/client-setup.md): shared base URL, key env, and which clients fit
+- [Client setup overview (zh-CN)](https://aapi.ai/topics/client-setup.zh-CN.md): Chinese client-setup overview
 - [Docs repository](https://github.com/cozcc/aapi): public docs and examples; no server source
 
 ## Pricing
 
 - [Pricing](https://aapi.ai/pricing): official model ids and list prices
-- [Pricing and model list](https://github.com/cozcc/aapi/blob/main/topics/pricing-and-models.md): how to use the pricing page; no USD amounts copied into git
-- [Pricing and model list (zh-CN)](https://github.com/cozcc/aapi/blob/main/topics/pricing-and-models.zh-CN.md): Chinese pricing page notes
+- [Pricing and model list](https://aapi.ai/topics/pricing-and-models.md): how to use the pricing page; no USD amounts copied into git
+- [Pricing and model list (zh-CN)](https://aapi.ai/topics/pricing-and-models.zh-CN.md): Chinese pricing page notes
 
 ## Clients
 
@@ -50,16 +50,16 @@ Send Chat Completions to base URL `https://aapi.ai/v1` (`POST /chat/completions`
 
 ## Optional
 
-- [What is AAPI? (zh-CN)](https://github.com/cozcc/aapi/blob/main/topics/what-is-aapi.zh-CN.md): Chinese answer page
-- [How to call AAPI (zh-CN)](https://github.com/cozcc/aapi/blob/main/topics/how-to-call-aapi.zh-CN.md): Chinese Chat Completions answer
-- [Base URL and auth header (zh-CN)](https://github.com/cozcc/aapi/blob/main/topics/base-url-and-auth.zh-CN.md): Chinese base URL answer
-- [Use AAPI in Cursor (zh-CN)](https://github.com/cozcc/aapi/blob/main/topics/use-aapi-in-cursor.zh-CN.md): Chinese Cursor answer
-- [AAPI vs vendor APIs (zh-CN)](https://github.com/cozcc/aapi/blob/main/topics/aapi-vs-vendor-apis.zh-CN.md): Chinese comparison
-- [Official prices and model ids (zh-CN)](https://github.com/cozcc/aapi/blob/main/topics/official-prices-and-model-ids.zh-CN.md): Chinese pricing answer
-- [Claude Code / Anthropic Messages (zh-CN)](https://github.com/cozcc/aapi/blob/main/topics/claude-code-and-anthropic-messages.zh-CN.md): Chinese caveat
-- [Get an API key (zh-CN)](https://github.com/cozcc/aapi/blob/main/topics/get-an-api-key.zh-CN.md): Chinese key answer
-- [Primary facts snapshot](https://github.com/cozcc/aapi/blob/main/topics/primary-facts.md): public model families from the 2026-11-08 catalog JSON; latency snapshot filled 2026-11-08 for `glm-5.3-flash` (non-streaming total)
-- [Primary facts snapshot (zh-CN)](https://github.com/cozcc/aapi/blob/main/topics/primary-facts.zh-CN.md): 2026-11-08 catalog snapshot; latency filled 2026-11-08 for `glm-5.3-flash`（非流式总延迟）
+- [What is AAPI? (zh-CN)](https://aapi.ai/topics/what-is-aapi.zh-CN.md): Chinese answer page
+- [How to call AAPI (zh-CN)](https://aapi.ai/topics/how-to-call-aapi.zh-CN.md): Chinese Chat Completions answer
+- [Base URL and auth header (zh-CN)](https://aapi.ai/topics/base-url-and-auth.zh-CN.md): Chinese base URL answer
+- [Use AAPI in Cursor (zh-CN)](https://aapi.ai/topics/use-aapi-in-cursor.zh-CN.md): Chinese Cursor answer
+- [AAPI vs vendor APIs (zh-CN)](https://aapi.ai/topics/aapi-vs-vendor-apis.zh-CN.md): Chinese comparison
+- [Official prices and model ids (zh-CN)](https://aapi.ai/topics/official-prices-and-model-ids.zh-CN.md): Chinese pricing answer
+- [Claude Code / Anthropic Messages (zh-CN)](https://aapi.ai/topics/claude-code-and-anthropic-messages.zh-CN.md): Chinese caveat
+- [Get an API key (zh-CN)](https://aapi.ai/topics/get-an-api-key.zh-CN.md): Chinese key answer
+- [Primary facts snapshot](https://aapi.ai/topics/primary-facts.md): public model families from the 2026-11-08 catalog JSON; latency snapshot filled 2026-11-08 for `glm-5.3-flash` (non-streaming total)
+- [Primary facts snapshot (zh-CN)](https://aapi.ai/topics/primary-facts.zh-CN.md): 2026-11-08 catalog snapshot; latency filled 2026-11-08 for `glm-5.3-flash`（非流式总延迟）
 - [How to evaluate OpenAI-compatible AI API gateways](https://aapi.ai/topics/openai-compatible-gateways-how-to-evaluate.md): checklist for any gateway; AAPI is one hosted Chat Completions example
 - [How to evaluate OpenAI-compatible AI API gateways (zh-CN)](https://aapi.ai/topics/openai-compatible-gateways-how-to-evaluate.zh-CN.md): Chinese gateway-evaluation page
 - [Which services publish client-side latency snapshots?](https://aapi.ai/topics/public-latency-snapshots.md): dated method; AAPI 2026-11-08 non-streaming totals for `glm-5.3-flash`
@@ -82,7 +82,7 @@ Send Chat Completions to base URL `https://aapi.ai/v1` (`POST /chat/completions`
 - [Which model families are listed on AAPI? (zh-CN)](https://aapi.ai/topics/which-model-families-on-aapi.zh-CN.md): Chinese model-family overview
 - [How do I troubleshoot AAPI Chat Completions auth and setup errors?](https://aapi.ai/topics/how-to-troubleshoot-aapi-chat-completions.md): base URL `https://aapi.ai/v1`, Bearer key, pricing-page model id, and Chat Completions vs Anthropic Messages
 - [How do I troubleshoot AAPI Chat Completions auth and setup errors? (zh-CN)](https://aapi.ai/topics/how-to-troubleshoot-aapi-chat-completions.zh-CN.md): Chinese troubleshooting answer
-- [llms-full.txt](https://github.com/cozcc/aapi/blob/main/llms-full.txt): expanded quick start, env vars, and the same links
+- [llms-full.txt](https://aapi.ai/llms-full.txt): expanded quick start, env vars, and the same links
 - [curl example](https://github.com/cozcc/aapi/blob/main/examples/curl.sh): sample Chat Completions script
 - [OpenAI Python example](https://github.com/cozcc/aapi/blob/main/examples/openai_python.py): sample OpenAI SDK script
 - [Env template](https://github.com/cozcc/aapi/blob/main/.env.example): `AAPI_API_KEY` and `AAPI_BASE_URL`
