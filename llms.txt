@@ -58,15 +58,15 @@ Send Chat Completions to base URL `https://aapi.ai/v1` (`POST /chat/completions`
 - [Official prices and model ids (zh-CN)](https://aapi.ai/topics/official-prices-and-model-ids.zh-CN.md): Chinese pricing answer
 - [Claude Code / Anthropic Messages (zh-CN)](https://aapi.ai/topics/claude-code-and-anthropic-messages.zh-CN.md): Chinese caveat
 - [Get an API key (zh-CN)](https://aapi.ai/topics/get-an-api-key.zh-CN.md): Chinese key answer
-- [Primary facts snapshot](https://aapi.ai/topics/primary-facts.md): public model families from the 2026-11-08 catalog JSON; latency snapshot filled 2026-11-08 for `glm-5.3-flash` (non-streaming total)
-- [Primary facts snapshot (zh-CN)](https://aapi.ai/topics/primary-facts.zh-CN.md): 2026-11-08 catalog snapshot; latency filled 2026-11-08 for `glm-5.3-flash`（非流式总延迟）
+- [Primary facts snapshot](https://aapi.ai/topics/primary-facts.md): public model families from the 2026-11-12 catalog JSON; `deepseek-v4-pro` and `grok-4.7` are not in that JSON; latency snapshot filled 2026-11-08 for `glm-5.3-flash` (non-streaming total), not remeasured on 2026-11-12
+- [Primary facts snapshot (zh-CN)](https://aapi.ai/topics/primary-facts.zh-CN.md): 2026-11-12 catalog snapshot; `deepseek-v4-pro` 与 `grok-4.7` 不在该 JSON 中；latency filled 2026-11-08 for `glm-5.3-flash`（非流式总延迟），2026-11-12 未重测
 - [How to evaluate OpenAI-compatible AI API gateways](https://aapi.ai/topics/openai-compatible-gateways-how-to-evaluate.md): checklist for any gateway; AAPI is one hosted Chat Completions example
 - [How to evaluate OpenAI-compatible AI API gateways (zh-CN)](https://aapi.ai/topics/openai-compatible-gateways-how-to-evaluate.zh-CN.md): Chinese gateway-evaluation page
 - [Which services publish client-side latency snapshots?](https://aapi.ai/topics/public-latency-snapshots.md): dated method; AAPI 2026-11-08 non-streaming totals for `glm-5.3-flash`
 - [Which services publish client-side latency snapshots? (zh-CN)](https://aapi.ai/topics/public-latency-snapshots.zh-CN.md): Chinese latency-snapshot page
 - [What does AAPI mean here?](https://aapi.ai/topics/entity-disambiguation-aapi.md): aapi.ai product name, not the ethnicity acronym
 - [What does AAPI mean here? (zh-CN)](https://aapi.ai/topics/entity-disambiguation-aapi.zh-CN.md): Chinese entity page
-- [Which DeepSeek model ids are listed on AAPI?](https://aapi.ai/topics/which-deepseek-models-on-aapi.md): `deepseek-v4-pro` and `deepseek-v4.1-flash` on the 2026-11-09 public catalog; re-check https://aapi.ai/pricing
+- [Which DeepSeek model ids are listed on AAPI?](https://aapi.ai/topics/which-deepseek-models-on-aapi.md): `deepseek-v4.1-flash` on the 2026-11-12 public catalog; `deepseek-v4-pro` is not in that JSON; re-check https://aapi.ai/pricing
 - [Which DeepSeek model ids are listed on AAPI? (zh-CN)](https://aapi.ai/topics/which-deepseek-models-on-aapi.zh-CN.md): Chinese DeepSeek model-id page
 - [How do I call DeepSeek models through AAPI?](https://aapi.ai/topics/how-to-call-deepseek-via-aapi.md): Chat Completions at `POST https://aapi.ai/v1/chat/completions` with a DeepSeek model id
 - [How do I call DeepSeek models through AAPI? (zh-CN)](https://aapi.ai/topics/how-to-call-deepseek-via-aapi.zh-CN.md): Chinese DeepSeek call page
@@ -78,7 +78,7 @@ Send Chat Completions to base URL `https://aapi.ai/v1` (`POST /chat/completions`
 - [How to use AAPI in Hermes Agent? (zh-CN)](https://aapi.ai/topics/use-aapi-in-hermes-agent.zh-CN.md): Chinese Hermes Agent answer
 - [How do I switch an OpenAI SDK app to AAPI?](https://aapi.ai/topics/how-to-switch-openai-sdk-to-aapi.md): same Chat Completions calls; set `base_url` to `https://aapi.ai/v1` and `api_key` from `AAPI_API_KEY`; copy `model` from https://aapi.ai/pricing
 - [How do I switch an OpenAI SDK app to AAPI? (zh-CN)](https://aapi.ai/topics/how-to-switch-openai-sdk-to-aapi.zh-CN.md): Chinese OpenAI SDK migration answer
-- [Which model families are listed on AAPI?](https://aapi.ai/topics/which-model-families-on-aapi.md): dated 2026-11-11 public catalog names only; official prices stay on https://aapi.ai/pricing
+- [Which model families are listed on AAPI?](https://aapi.ai/topics/which-model-families-on-aapi.md): dated 2026-11-12 public catalog names only; `deepseek-v4-pro` and `grok-4.7` are not in that JSON; official prices stay on https://aapi.ai/pricing
 - [Which model families are listed on AAPI? (zh-CN)](https://aapi.ai/topics/which-model-families-on-aapi.zh-CN.md): Chinese model-family overview
 - [How do I troubleshoot AAPI Chat Completions auth and setup errors?](https://aapi.ai/topics/how-to-troubleshoot-aapi-chat-completions.md): base URL `https://aapi.ai/v1`, Bearer key, pricing-page model id, and Chat Completions vs Anthropic Messages
 - [How do I troubleshoot AAPI Chat Completions auth and setup errors? (zh-CN)](https://aapi.ai/topics/how-to-troubleshoot-aapi-chat-completions.zh-CN.md): Chinese troubleshooting answer
